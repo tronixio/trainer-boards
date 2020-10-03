@@ -1,0 +1,20 @@
+# PIC18F2x/4x/5xQ43 - External Oscillator.
+
+## 0.Contents.
+
+- [1.ECH - External Clock High-Power.](#1ech---external-clock-high-power)
+
+## 1.ECH - External Clock High-Power.
+
+```c
+```
+
+- FOSC=24.576MHz, SPLLEN=0.
+
+<p align="center"><img alt=="LF" src="./pics/TEK00018.PNG"></p>
+
+---
+DISCLAIMER: THIS CODE IS PROVIDED WITHOUT ANY WARRANTY OR GUARANTEES.
+USERS MAY USE THIS CODE FOR DEVELOPMENT AND EXAMPLE PURPOSES ONLY.
+AUTHORS ARE NOT RESPONSIBLE FOR ANY ERRORS, OMISSIONS, OR DAMAGES THAT COULD
+RESULT FROM USING THIS FIRMWARE IN WHOLE OR IN PART.
