@@ -39,8 +39,10 @@ CONFIG LPBOR=OFF
 CONFIG LVP=ON
 
 #include <xc.inc>
-; PIC16F1773/6/8 - Compile with PIC-AS(v2.30).
-; PIC16F1773/6/8 - @1MHz Internal Oscillator.
+; PIC16F1778 - Compile with PIC-AS(v2.30).
+; PIC16F1778 - @1MHz Internal Oscillator.
+
+; This code is a demonstration code to show how to access the variables present in the different GPR Bank memories.
 
 ; GPR BANK0.
 PSECT cstackBANK0,class=BANK0,space=1,delta=1
