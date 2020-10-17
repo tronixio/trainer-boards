@@ -2,7 +2,11 @@
 
 ## 0.Contents.
 
-- [1.](#)
+- [1.Code & Configuration.](#1code--configuration)
+
+- [2.Build & Load Output.](#2build--load-output)
+
+- [3.Simulation & Debug.](#3simulation--debug)
 
 ## 1.Code & Configuration.
 
@@ -10,9 +14,9 @@
 
 <p align="center"><img alt=="" src="./pics/00.png"></p>
 
-- Configure PIC-AS Linker Program Sector
+- Configure PIC-AS Linker Program Sector.
 
-<p align="center"><img alt=="" src="./pics/01.pmg"></p>
+<p align="center"><img alt=="" src="./pics/01.png"></p>
 
 ```c
 ; Configuration Registers.

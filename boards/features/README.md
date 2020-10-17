@@ -2,6 +2,10 @@
 
 ## PIC 8-Bit.
 
+### PIC-AS PIC16F.
+
+- [PIC16F - PIC-AS General Purpose Register (GPR) Bank.](./pic16f/gpr.md)
+
 ### PIC16F1773/6/7/8/9.
 
 - [PIC16F1773/6/7/8/9 - Internal Oscillator.](./pic16f177x/intosc.md)
