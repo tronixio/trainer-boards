@@ -119,22 +119,22 @@ loop:
 ```diff
 Psect Usage Map:
 
- Psect      | Contents            | Memory Range  | Size
-------------|---------------------|---------------|------------
- reset_vec  | Reset vector        | 0000h - 0000h |  1 word   
- cinit      | Initialization code | 0005h - 001Bh | 17 words  
-------------|---------------------|---------------|------------
-            |                     |               |            
- cstackBANK | Stack in bank 0     | 0020h - 0020h |  1 byte   
-            |                     |               |            
- cstackBANK | Stack in bank 1     | 00A0h - 00A0h |  1 byte   
-            |                     |               |            
- cstackBANK | Stack in bank 2     | 0120h - 0120h |  1 byte   
-            |                     |               |            
- cstackBANK | Stack in bank 25    | 0CA0h - 0CA0h |  1 byte   
-------------|---------------------|---------------|------------
- config     |                     | 8007h - 8008h |  2 words  
-------------|---------------------|---------------|------------
+  Psect      | Contents            | Memory Range  | Size
+ ------------|---------------------|---------------|------------
+  reset_vec  | Reset vector        | 0000h - 0000h |  1 word
+  cinit      | Initialization code | 0005h - 001Bh | 17 words
+ ------------|---------------------|---------------|------------
+             |                     |               |
+- cstackBANK | Stack in bank 0     | 0020h - 0020h |  1 byte
+             |                     |               |
+- cstackBANK | Stack in bank 1     | 00A0h - 00A0h |  1 byte
+             |                      |               |
+- cstackBANK | Stack in bank 2     | 0120h - 0120h |  1 byte
+             |                     |               |
+- cstackBANK | Stack in bank 25    | 0CA0h - 0CA0h |  1 byte
+ ------------|---------------------|---------------|------------
+  config     |                     | 8007h - 8008h |  2 words
+ ------------|---------------------|---------------|------------
 
 Memory Class Usage:
 
