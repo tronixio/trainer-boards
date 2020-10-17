@@ -128,7 +128,7 @@ Psect Usage Map:
 - cstackBANK | Stack in bank 0     | 0020h - 0020h |  1 byte
              |                     |               |
 - cstackBANK | Stack in bank 1     | 00A0h - 00A0h |  1 byte
-             |                      |               |
+             |                     |               |
 - cstackBANK | Stack in bank 2     | 0120h - 0120h |  1 byte
              |                     |               |
 - cstackBANK | Stack in bank 25    | 0CA0h - 0CA0h |  1 byte
@@ -172,25 +172,25 @@ Data space:
     BANK22               used     0h (     0) of    50h bytes   (  0.0%)
     BANK23               used     0h (     0) of    50h bytes   (  0.0%)
     BANK24               used     0h (     0) of    50h bytes   (  0.0%)
- -   BANK25               used     1h (     1) of    20h bytes   (  3.1%)
+-   BANK25               used     1h (     1) of    20h bytes   (  3.1%)
     ABS1                 used     0h (     0) of   7E0h bytes   (  0.0%) 
 ```
 
 ## 3.Simulation & Debug.
 
-- GPR Bank0.
+- GPR Bank0: variable delay0.
 
 <p align="center"><img alt=="" src="./pics/02.png"></p>
 
-- GPR Bank1.
+- GPR Bank1: variable delay1.
 
 <p align="center"><img alt=="" src="./pics/03.png"></p>
 
-- GPR Bank2.
+- GPR Bank2: variable delay2.
 
 <p align="center"><img alt=="" src="./pics/04.png"></p>
 
-- GPR Bank25.
+- GPR Bank25: variable delay25.
 
 <p align="center"><img alt=="" src="./pics/05.png"></p>
 
