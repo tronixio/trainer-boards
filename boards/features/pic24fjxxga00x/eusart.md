@@ -53,12 +53,12 @@
 // ASCII Characters.
 #define ASCII_CR                    0x0D
 
-// Functions Prototype.
+// Function Prototypes.
 uint8_t eusart_readCharacter(void);
 void eusart_writeCharacter(uint8_t u8Data);
 void eusart_writeString(const uint8_t * u8Data);
 
-// Strings & Custom patterns.
+// Strings.
 const uint8_t au8Tronix[] = "\r\n\r\nTronix I/O";
 const uint8_t au8WWW[] = "\r\nhttp://www.tronix.io/\r\n";
 const uint8_t au8Ready[] = "\r\nREADY> ";
@@ -178,12 +178,12 @@ void eusart_writeString(const uint8_t * u8Data)
 // ASCII Characters.
 #define ASCII_CR                    0x0D
 
-// Functions Prototype.
+// Function Prototypes.
 uint8_t eusart_readCharacter(void);
 void eusart_writeCharacter(uint8_t u8Data);
 void eusart_writeString(const uint8_t * u8Data);
 
-// Strings & Custom patterns.
+// Strings.
 const uint8_t au8Tronix[] = "\r\n\r\nTronix I/O";
 const uint8_t au8WWW[] = "\r\nhttp://www.tronix.io/\r\n";
 const uint8_t au8Ready[] = "\r\nREADY> ";

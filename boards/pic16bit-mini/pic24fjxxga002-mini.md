@@ -67,7 +67,7 @@
 #define SWITCH_S1                   PORTBbits.RB5
 #define SWITCH_S2                   PORTBbits.RB6
 
-// Functions Prototype.
+// Function Prototypes.
 uint8_t eusart_readCharacter(void);
 void eusart_writeCharacter(uint8_t u8Data);
 void eusart_writeString(const uint8_t * u8Data);
@@ -501,7 +501,7 @@ void U16toA(uint16_t u16Data, uint8_t * au8Buffer, uint8_t u8Base)
 #define SWITCH_S1                                          PORTBbits.RB5
 #define SWITCH_S2                                          PORTBbits.RB6
 
-// Functions Prototype.
+// Function Prototypes.
 void i2c_restart(void);
 void i2c_start(void);
 void i2c_stop(void);

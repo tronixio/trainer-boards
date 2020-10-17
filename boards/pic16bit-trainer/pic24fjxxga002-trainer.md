@@ -196,7 +196,7 @@ void main(void)
 #define ROTARY_ENCODER_B        PORTAbits.RA1
 #define ROTARY_ENCODER_SWITCH   PORTAbits.RA2
 
-// Functions Prototype.
+// Function Prototypes.
 int8_t rotary_u8encoderRead(void);
 
 // Global Variables.
