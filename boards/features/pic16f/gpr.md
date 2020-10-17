@@ -116,7 +116,7 @@ loop:
 
 ## 2.Build & Load Output.
 
-```text
+```diff
 Psect Usage Map:
 
  Psect      | Contents            | Memory Range  | Size
@@ -147,9 +147,9 @@ Program space:
 
 Data space:
     COMMON               used     0h (     0) of    10h bytes   (  0.0%)
-    BANK0                used     1h (     1) of    50h bytes   (  1.2%)
-    BANK1                used     1h (     1) of    50h bytes   (  1.2%)
-    BANK2                used     1h (     1) of    50h bytes   (  1.2%)
+-    BANK0                used     1h (     1) of    50h bytes   (  1.2%)
+-    BANK1                used     1h (     1) of    50h bytes   (  1.2%)
+-    BANK2                used     1h (     1) of    50h bytes   (  1.2%)
     BANK3                used     0h (     0) of    50h bytes   (  0.0%)
     BANK4                used     0h (     0) of    50h bytes   (  0.0%)
     BANK5                used     0h (     0) of    50h bytes   (  0.0%)
@@ -172,7 +172,7 @@ Data space:
     BANK22               used     0h (     0) of    50h bytes   (  0.0%)
     BANK23               used     0h (     0) of    50h bytes   (  0.0%)
     BANK24               used     0h (     0) of    50h bytes   (  0.0%)
-    BANK25               used     1h (     1) of    20h bytes   (  3.1%)
+ -   BANK25               used     1h (     1) of    20h bytes   (  3.1%)
     ABS1                 used     0h (     0) of   7E0h bytes   (  0.0%) 
 ```
 
