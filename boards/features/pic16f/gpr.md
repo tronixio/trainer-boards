@@ -180,19 +180,19 @@ Data space:
 
 - GPR Bank0: variable delay0.
 
-<p align="center"><img alt=="" src="./pics/02.png"></p>
+<p align="center"><img alt="" src="./pics/02.png"></p>
 
 - GPR Bank1: variable delay1.
 
-<p align="center"><img alt=="" src="./pics/03.png"></p>
+<p align="center"><img alt="" src="./pics/03.png"></p>
 
 - GPR Bank2: variable delay2.
 
-<p align="center"><img alt=="" src="./pics/04.png"></p>
+<p align="center"><img alt="" src="./pics/04.png"></p>
 
 - GPR Bank25: variable delay25.
 
-<p align="center"><img alt=="" src="./pics/05.png"></p>
+<p align="center"><img alt="" src="./pics/05.png"></p>
 
 ---
 DISCLAIMER: THIS CODE IS PROVIDED WITHOUT ANY WARRANTY OR GUARANTEES.
