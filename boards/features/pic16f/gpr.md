@@ -18,6 +18,8 @@
 
 <p align="center"><img alt=="" src="./pics/01.png"></p>
 
+- Code.
+
 ```c
 ; Configuration Registers.
 CONFIG FOSC=INTOSC
@@ -58,7 +60,7 @@ delay2:	    DS  1
 
 ; GPR BANK25.
 PSECT cstackBANK25,class=BANK25,space=1,delta=1
-delay25:	    DS  1
+delay25:     DS  1
 
 ; MCU Definitions.
 ; BANKS.
@@ -80,28 +82,28 @@ initialize:
     movlw   0b01011000
     movwf   OSCCON
 
-    ; Delay BANK0.
+    ; BANK0 variable delay0.
     movlb   BANK0
     movlw   5
     movwf   delay0
     decfsz  delay0, f
     bra	    $-1
 
-    ; Delay BANK1.
+    ; BANK1 variable delay1.
     movlb   BANK1
     movlw   5
     movwf   delay1 & 0x7f
     decfsz  delay1 & 0x7f, f
     bra	    $-1
 
-    ; Delay BANK2.
+    ; BANK2 variable delay2.
     movlb   BANK2
     movlw   5
     movwf   delay2 & 0x7f
     decfsz  delay2 & 0x7f, f
     bra	    $-1
 
-    ; Delay BANK25.
+    ; BANK25 variable delay25.
     movlb   BANK25
     movlw   5
     movwf   delay25 & 0x7f
