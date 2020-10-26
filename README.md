@@ -24,7 +24,7 @@
 ## Modules SPI.
 
 - [LCD Characters - EA-DOGM081/162/163 - 1/2/3 Lines 8/16 Characters.](./modules/dogm16x/README.md)
-- [LCD Characters - NHD-C0216CZ - 2 Lines 16 Characters.](./modules/c0216cz/README.md)
+- [DRAFT - LCD Characters - NHD-C0216CZ - 2 Lines 16 Characters.](./modules/c0216cz/README.md)
 - [LCD Graphic - EA-DOGM132 - 132x32.](./modules/dogm132/README.md)
 - [LCD Graphic - NHD-C12832A1Z - 128x32.](./modules/c12832a1z/README.md)
 - [LCD Graphic - NHD-C12832A1Z-RGB - 128x32.](./modules/c12832a1z-rgb/README.md)
