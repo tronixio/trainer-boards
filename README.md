@@ -30,6 +30,10 @@
 - [LCD Graphic - NHD-C12832A1Z-RGB - 128x32.](./modules/c12832a1z-rgb/README.md)
 - [TODO - 8-Bit I/O Expander - MCP23S08.](./modules/mcp23008/README.md)
 
+## Modules GPIO.
+
+- [DRAFT - AP572x - Step-up DC/DC Converter for white LEDs.](./modules/ap572x/README.md)
+
 ## Modules UART.
 
 - [TODO - MCP2221A.](./modules/mcp2221a/README.md)
