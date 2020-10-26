@@ -32,7 +32,7 @@
 
 ## Modules GPIO.
 
-- [DRAFT - AP572x - Step-up DC/DC Converter for white LEDs.](./modules/ap572x/README.md)
+- [DRAFT - AP5724/5/6 - Step-up DC/DC Converter for white LEDs.](./modules/ap572x/README.md)
 - [TODO - CAT4238 - Step-up DC/DC Converter for white LEDs.](./modules/cat4238/README.md)
 
 ## Modules UART.
