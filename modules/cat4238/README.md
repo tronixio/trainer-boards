@@ -1,8 +1,8 @@
-# TODO - CAT4238.
+# DRAFT - CAT4238.
 
 ## Features.
 
-- Step-up DC/DC Converter 2~6 LED.
+- Step-up DC/DC Converter 10 LED.
 - [Datasheet CAT4238.](https://www.onsemi.com/pub/Collateral/CAT4238-D.PDF)
 
 ## Schematic.
