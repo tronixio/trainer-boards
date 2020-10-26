@@ -13,7 +13,7 @@
 
 ## Code Examples.
 
-- [TODO - PIC16F1773/6/8 - PIC8-Bit Trainer.](./ap572x.md)
+- [PIC16F1773/6/8 - PIC8-Bit Trainer.](./ap572x.md)
 
 ## Board top.
 
