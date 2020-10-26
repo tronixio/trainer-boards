@@ -2,11 +2,11 @@
 
 ## 0.Contents.
 
-- [1.PIC16F1773/6/8 EUSART Asynchronous.](#1pic16f177368-eusart-asynchronous)
-- [2.PIC16F1773/6/8 EUSART Rx Buffer Asynchronous.](#2pic16f177368-eusart-rx-buffer-asynchronous)
-- [3.PIC16F1777/9 EUSART Asynchronous.](#3pic16f17779-eusart-asynchronous)
+- [1.PIC16F1773/6/8 EUSART Tx/Rx Asynchronous.](#1pic16f177368-eusart-asynchronous)
+- [2.PIC16F1773/6/8 EUSART Tx/Rx Buffer Asynchronous.](#2pic16f177368-eusart-rx-buffer-asynchronous)
+- [3.PIC16F1777/9 EUSART Tx/Rx Asynchronous.](#3pic16f17779-eusart-asynchronous)
 
-## 1.PIC16F1773/6/8 EUSART Asynchronous.
+## 1.PIC16F1773/6/8 EUSART Tx/Rx Asynchronous.
 
 ```c
 // Configuration Registers.
@@ -22,7 +22,7 @@
 // PIC16F1777/9 - @8MHz Internal Oscillator.
 // v0.1 - 07/2020.
 
-// EUSART Asynchronous.
+// EUSART Tx/Rx Asynchronous.
 
 // MCU.RC6.EUSART.UTX.
 // MCU.RC7.EUSART.RTX.
@@ -182,7 +182,7 @@ void eusart_writeString(const uint8_t * u8Data)
 
 <p align="center"><img alt=="EUSART" src="./pics/eusart.png"></p>
 
-## 2.PIC16F1773/6/8 EUSART Rx Buffer Asynchronous.
+## 2.PIC16F1773/6/8 EUSART Tx/Rx Buffer Asynchronous.
 
 ```c
 // Configuration Registers.
@@ -198,7 +198,7 @@ void eusart_writeString(const uint8_t * u8Data)
 // PIC16F1773/6/8 - @16MHz Internal Oscillator.
 // v0.1 - 10/2020.
 
-// EUSART RX Buffer Asynchronous.
+// EUSART Tx/Rx Buffer Asynchronous.
 
 // MCU.RC6.EUSART.UTX.
 // MCU.RC7.EUSART.RTX.
@@ -348,16 +348,16 @@ void eusart_writeString(const uint8_t * u8Data)
 
 uint8_t atou8(uint8_t * au8Buffer)
 {
-    uint8_t	au8Data = 0;
+    uint8_t au8Data = 0;
 
     while(*au8Buffer <= '9' && *au8Buffer >= '0')
-		au8Data = au8Data * 10 + (*au8Buffer++ - '0');
+        au8Data = au8Data * 10 + (*au8Buffer++ - '0');
 
-	return(au8Data);
+    return(au8Data);
 }
 ```
 
-## 3.PIC16F1777/9 EUSART Asynchronous.
+## 3.PIC16F1777/9 EUSART Tx/Rx Asynchronous.
 
 ```c
 // Configuration Registers.
@@ -373,7 +373,7 @@ uint8_t atou8(uint8_t * au8Buffer)
 // PIC16F1777/9 - @8MHz Internal Oscillator.
 // v0.1 - 07/2020.
 
-// EUSART Asynchronous.
+// EUSART Tx/Rx Asynchronous.
 
 // MCU.RC6.EUSART.UTX.
 // MCU.RC7.EUSART.RTX.

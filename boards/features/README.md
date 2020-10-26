@@ -22,10 +22,10 @@
 
 ### DRAFT - PIC18FXXQ43.
 
-- [DRAFT - PIC18FXXQ43 - Internal Oscillator.](./pic18fxxq43/intosc.md)
-- [DRAFT - PIC18FXXQ43 - External Oscillator.](./pic18fxxq43/extosc.md)
-- [DRAFT - PIC18FXXQ43 - GPIO.](./pic18fxxq43/gpio.md)
-- [DRAFT - PIC18FXXQ43 - EUSART.](./pic18fxxq43/eusart.md)
+- [TODO - PIC18FXXQ43 - Internal Oscillator.](./pic18fxxq43/intosc.md)
+- [TODO - PIC18FXXQ43 - External Oscillator.](./pic18fxxq43/extosc.md)
+- [TODO - PIC18FXXQ43 - GPIO.](./pic18fxxq43/gpio.md)
+- [TODO - PIC18FXXQ43 - EUSART.](./pic18fxxq43/eusart.md)
 
 ## PIC 16-Bit.
 
