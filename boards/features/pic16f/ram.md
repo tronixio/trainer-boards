@@ -41,33 +41,18 @@ CONFIG LPBOR=OFF
 CONFIG LVP=ON
 
 #include <xc.inc>
-; PIC16F1778 - Compile with PIC-AS(v2.30).
-; PIC16F1778 - @1MHz Internal Oscillator.
+; PIC16F1773/6/8 - Compile with PIC-AS(v2.30).
+; PIC16F1773/6/8 - @1MHz Internal Oscillator.
 
-; This code is a demonstration code to show how to access the variables present in the different GPR Bank memories.
-
-; GPR BANK0.
-PSECT cstackBANK0,class=BANK0,space=1,delta=1
-delay0:	    DS  1
-
-; GPR BANK1.
-PSECT cstackBANK1,class=BANK1,space=1,delta=1
-delay1:	    DS  1
-
-; GPR BANK2.
-PSECT cstackBANK2,class=BANK2,space=1,delta=1
-delay2:	    DS  1
-
-; GPR BANK25.
-PSECT cstackBANK25,class=BANK25,space=1,delta=1
-delay25:     DS  1
+; This code is a demonstration code to show how to access the variables present in the different Common RAM memories.
+    
+; Common RAM.
+PSECT cstackCOMM,class=COMMON,space=1,delta=1
+delay:	    DS  1
 
 ; MCU Definitions.
 ; BANKS.
-#define	BANK0   0x0
 #define	BANK1   0x1
-#define	BANK2   0x2
-#define	BANK25  0x19
 
 ; Reset Vector.
 PSECT reset_vec,class=CODE,space=0,delta=2
@@ -83,32 +68,10 @@ initialize:
     movlw   0b01011000
     movwf   OSCCON
 
-    ; BANK0 Variable delay0.
-    movlb   BANK0
+    ; Common RAM.
     movlw   5
-    movwf   delay0
-    decfsz  delay0, f
-    bra	    $-1
-
-    ; BANK1 Variable delay1.
-    movlb   BANK1
-    movlw   5
-    movwf   delay1 & 0x7f
-    decfsz  delay1 & 0x7f, f
-    bra	    $-1
-
-    ; BANK2 Variable delay2.
-    movlb   BANK2
-    movlw   5
-    movwf   delay2 & 0x7f
-    decfsz  delay2 & 0x7f, f
-    bra	    $-1
-
-    ; BANK25 Variable delay25.
-    movlb   BANK25
-    movlw   5
-    movwf   delay25 & 0x7f
-    decfsz  delay25 & 0x7f, f
+    movwf   delay
+    decfsz  delay, f
     bra	    $-1
 
 loop:
@@ -122,37 +85,30 @@ loop:
 ```diff
 Psect Usage Map:
 
-  Psect      | Contents            | Memory Range  | Size
- ------------|---------------------|---------------|------------
-  reset_vec  | Reset vector        | 0000h - 0000h |  1 word
-  cinit      | Initialization code | 0005h - 001Bh | 17 words
- ------------|---------------------|---------------|------------
-             |                     |               |
-- cstackBANK | Stack in bank 0     | 0020h - 0020h |  1 byte
-             |                     |               |
-- cstackBANK | Stack in bank 1     | 00A0h - 00A0h |  1 byte
-             |                     |               |
-- cstackBANK | Stack in bank 2     | 0120h - 0120h |  1 byte
-             |                     |               |
-- cstackBANK | Stack in bank 25    | 0CA0h - 0CA0h |  1 byte
- ------------|---------------------|---------------|------------
-  config     |                     | 8007h - 8008h |  2 words
- ------------|---------------------|---------------|------------
+   Psect      | Contents               | Memory Range  | Size
+  ------------|------------------------|---------------|------------
+   reset_vec  | Reset vector           | 0000h - 0000h |  1 word   
+   cinit      | Initialization code    | 0005h - 001Ch | 18 words  
+  ------------|------------------------|---------------|------------
+-  cstackCOMM | Stack in common memory | 0070h - 0070h |  1 byte   
+  ------------|------------------------|---------------|------------
+   config     |                        | 8007h - 8008h |  2 words  
+  ------------|------------------------|---------------|------------
 
 Memory Class Usage:
 
 Program space:
-    CODE                 used    18h (    24) of  4000h words   (  0.1%)
+    CODE                 used    19h (    25) of  4000h words   (  0.2%)
     STRCODE              used     0h (     0) of  4000h words   (  0.0%)
     STRING               used     0h (     0) of  4000h words   (  0.0%)
     CONST                used     0h (     0) of  4000h words   (  0.0%)
     ENTRY                used     0h (     0) of  4000h words   (  0.0%)
 
 Data space:
-    COMMON               used     0h (     0) of    10h bytes   (  0.0%)
--    BANK0                used     1h (     1) of    50h bytes   (  1.2%)
--    BANK1                used     1h (     1) of    50h bytes   (  1.2%)
--    BANK2                used     1h (     1) of    50h bytes   (  1.2%)
+-    COMMON               used     1h (     1) of    10h bytes   (  6.2%)
+    BANK0                used     0h (     0) of    50h bytes   (  0.0%)
+    BANK1                used     0h (     0) of    50h bytes   (  0.0%)
+    BANK2                used     0h (     0) of    50h bytes   (  0.0%)
     BANK3                used     0h (     0) of    50h bytes   (  0.0%)
     BANK4                used     0h (     0) of    50h bytes   (  0.0%)
     BANK5                used     0h (     0) of    50h bytes   (  0.0%)
@@ -175,27 +131,15 @@ Data space:
     BANK22               used     0h (     0) of    50h bytes   (  0.0%)
     BANK23               used     0h (     0) of    50h bytes   (  0.0%)
     BANK24               used     0h (     0) of    50h bytes   (  0.0%)
--   BANK25               used     1h (     1) of    20h bytes   (  3.1%)
-    ABS1                 used     0h (     0) of   7E0h bytes   (  0.0%) 
+    BANK25               used     0h (     0) of    20h bytes   (  0.0%)
+    ABS1                 used     0h (     0) of   7E0h bytes   (  0.0%)
 ```
 
 ## 3.Simulation & Debug.
 
-- GPR Bank0: variable delay0.
+- Common RAM: variable delay.
 
-<p align="center"><img alt="" src="./pics/02.png"></p>
-
-- GPR Bank1: variable delay1.
-
-<p align="center"><img alt="" src="./pics/03.png"></p>
-
-- GPR Bank2: variable delay2.
-
-<p align="center"><img alt="" src="./pics/04.png"></p>
-
-- GPR Bank25: variable delay25.
-
-<p align="center"><img alt="" src="./pics/05.png"></p>
+<p align="center"><img alt="" src="./pics/06.png"></p>
 
 ---
 DISCLAIMER: THIS CODE IS PROVIDED WITHOUT ANY WARRANTY OR GUARANTEES.

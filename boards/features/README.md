@@ -5,6 +5,7 @@
 ### PIC-AS PIC16F.
 
 - [PIC16F - PIC-AS General Purpose Register (GPR) Bank.](./pic16f/gpr.md)
+- [PIC16F - PIC-AS Common RAM Memories.](./pic16f/ram.md)
 
 ### PIC16F1773/6/7/8/9.
 
