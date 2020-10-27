@@ -1,4 +1,4 @@
-# PIC16F - GPR Bank.
+# PIC16F - Common RAM.
 
 ## 0.Contents.
 
