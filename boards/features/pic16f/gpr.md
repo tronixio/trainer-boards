@@ -181,19 +181,19 @@ Data space:
 
 ## 3.Simulation & Debug.
 
-- GPR Bank0: variable delay0.
+- GPR Bank0: variable **delay0**.
 
 <p align="center"><img alt="" src="./pics/02.png"></p>
 
-- GPR Bank1: variable delay1.
+- GPR Bank1: variable **delay1**.
 
 <p align="center"><img alt="" src="./pics/03.png"></p>
 
-- GPR Bank2: variable delay2.
+- GPR Bank2: variable **delay2**.
 
 <p align="center"><img alt="" src="./pics/04.png"></p>
 
-- GPR Bank25: variable delay25.
+- GPR Bank25: variable **delay25**.
 
 <p align="center"><img alt="" src="./pics/05.png"></p>
 

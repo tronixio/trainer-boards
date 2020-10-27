@@ -137,7 +137,7 @@ Data space:
 
 ## 3.Simulation & Debug.
 
-- Common RAM: variable delay.
+- Common RAM: variable **delay**.
 
 <p align="center"><img alt="" src="./pics/06.png"></p>
 
