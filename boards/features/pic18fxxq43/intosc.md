@@ -20,7 +20,7 @@
 #pragma config WRTSAF = OFF, WRTAPP = OFF, CP = OFF
 
 #include <xc.h>
-// PIC18F2x/4x/5xQ43 - Compile with XC8(v2.20).
+// PIC18F2x/4x/5xQ43 - Compile with XC8(v2.31).
 // PIC18F2x/4x/5xQ43 - @xMHz Internal Oscillator.
 // v0.1 - 07/2020.
 

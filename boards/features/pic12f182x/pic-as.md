@@ -25,7 +25,7 @@ CONFIG BORV=LO
 CONFIG LVP=ON
 
 #include <xc.inc>
-; PIC12F1822 - Compile with PIC-AS(v2.30).
+; PIC12F1822 - Compile with PIC-AS(v2.31).
 ; PIC12F1822 - @1MHz Internal Oscillator.
     
 ; PINOUT

@@ -15,7 +15,7 @@
 
 #include <xc.h>
 #define _XTAL_FREQ 8000000
-// PIC16F1773/6/8 - Compile with XC8(v2.20).
+// PIC16F1773/6/8 - Compile with XC8(v2.31).
 // PIC16F1773/6/8 - @8MHz Internal Oscillator.
 
 // CCP1/2/7/8 - TIMER2/4/6/8.
@@ -123,7 +123,7 @@ void main(void)
 
 #include <xc.h>
 #define _XTAL_FREQ 8000000
-// PIC16F1773/6/8 - Compile with XC8(v2.20).
+// PIC16F1773/6/8 - Compile with XC8(v2.31).
 // PIC16F1773/6/8 - @8MHz Internal Oscillator.
 
 // CCP1/2/7/8 - TIMER2/4/6/8.

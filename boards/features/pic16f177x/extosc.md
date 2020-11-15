@@ -14,7 +14,7 @@
 #pragma config STVREN = ON, BORV = LO, LPBOR = OFF, LVP = ON
 
 #include <xc.h>
-// PIC16F1773/6/7/8/9 - Compile with XC8(v2.20).
+// PIC16F1773/6/7/8/9 - Compile with XC8(v2.31).
 // PIC16F1773/6/7/8/9 - @24.576MHz External Oscillator.
 // v0.1 - 04/2020.
 

@@ -19,7 +19,7 @@
 #include <xc.h>
 #include <stdint.h>
 #define _XTAL_FREQ 8000000
-// PIC18F4xJ13 - Compile with XC8(v2.20).
+// PIC18F4xJ13 - Compile with XC8(v2.31).
 // PIC18F4xJ13 - @8MHz Internal Oscillator.
 // v0.1 - 07/2020.
 
@@ -170,7 +170,7 @@ void eusart_writeString(const uint8_t * u8Data)
 #include <xc.h>
 #include <stdint.h>
 #define _XTAL_FREQ 8000000
-// PIC18F4xJ13 - Compile with XC8(v2.20).
+// PIC18F4xJ13 - Compile with XC8(v2.31).
 // PIC18F4xJ13 - @8MHz Internal Oscillator.
 // v0.1 - 07/2020.
 

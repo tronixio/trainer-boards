@@ -17,7 +17,7 @@
 
 #include <xc.h>
 #define _XTAL_FREQ 8000000
-// PIC16F1773/6/8 - Compile with XC8(v2.20).
+// PIC16F1773/6/8 - Compile with XC8(v2.31).
 // PIC16F1773/6/8 - @8MHz Internal Oscillator.
 // v0.1 - 03/2020.
 
@@ -106,7 +106,7 @@ void main(void)
 
 #include <xc.h>
 #define _XTAL_FREQ 8000000
-// PIC16F1777/9 - Compile with XC8(v2.20).
+// PIC16F1777/9 - Compile with XC8(v2.31).
 // PIC16F1777/9 - @8MHz Internal Oscillator.
 
 // I/O Ports.
@@ -218,7 +218,7 @@ CONFIG LPBOR=OFF
 CONFIG LVP=ON
 
 #include <xc.inc>
-// PIC16F1773/6/8 - Compile with PIC-AS(v2.20).
+// PIC16F1773/6/8 - Compile with PIC-AS(v2.31).
 // PIC16F1773/6/8 - @8MHz Internal Oscillator.
 
 PSECT resetVec,class=CODE,delta=2

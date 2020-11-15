@@ -16,7 +16,7 @@
 #pragma config WPFP=PAGE_63, WPCFG=OFF, WPDIS=OFF, WPEND=PAGE_WPFP
 
 #include <xc.h>
-// PIC18FxxJ13 - Compile with XC8(v2.20).
+// PIC18FxxJ13 - Compile with XC8(v2.31).
 // PIC18FxxJ13 - @24.576MHz External Oscillator.
 // v0.1 - 06/2020.
 

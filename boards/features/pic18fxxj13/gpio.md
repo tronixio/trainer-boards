@@ -18,7 +18,7 @@
 
 #include <xc.h>
 #define _XTAL_FREQ 8000000
-// PIC18F2xJ13 - Compile with XC8(v2.20).
+// PIC18F2xJ13 - Compile with XC8(v2.31).
 // PIC18F2xJ13 - @8MHz Internal Oscillator.
 // v0.1 - 06/2020.
 
@@ -97,7 +97,7 @@ int main(void)
 
 #include <xc.h>
 #define _XTAL_FREQ 8000000
-// PIC18F4xJ13 - Compile with XC8(v2.20).
+// PIC18F4xJ13 - Compile with XC8(v2.31).
 // PIC18F4xJ13 - @8MHz Internal Oscillator.
 
 // I/O Ports
