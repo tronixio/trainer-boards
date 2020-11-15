@@ -2,10 +2,10 @@
 
 ## 0.Contents.
 
-- 1.LPRC - Low-Power Internal Oscillator.
-- 2.FRC - Fast Internal Oscillator.
-- 3.FRCDIV - Fast Internal Oscillator with Postscaler.
-- 4.FRCPLL - Fast Internal Oscillator with PLL.
+- [1.LPRC - Low-Power Internal Oscillator.](./intosc.md#1lprc---low-power-internal-oscillator)
+- [2.FRC - Fast Internal Oscillator.](./intosc.md#2frc---fast-internal-oscillator)
+- [3.FRCDIV - Fast Internal Oscillator with Postscaler.](./intosc.md#3frcdiv---fast-internal-oscillator-with-postscaler)
+- [4.FRCPLL - Fast Internal Oscillator with PLL.](./intosc.md#4frcpll---fast-internal-oscillator-with-pll)
 
 ## 1.LPRC - Low-Power Internal Oscillator.
 

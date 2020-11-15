@@ -2,7 +2,7 @@
 
 ## 0.Contents.
 
-- 1.EC - External Clock.
+- [1.EC - External Clock.](./extosc.md#1ec---external-clock)
 
 ## 1.EC - External Clock.
 
