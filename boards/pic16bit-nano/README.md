@@ -16,7 +16,7 @@
 
 ## Code Examples.
 
-- [PIC24FJxxGA004 - EUSART.](./pic24fjxxga004-nano.md)
+- [PIC16-Bit Features.](https://github.com/tronixio/trainer-boards/tree/main/boards/features#pic-16-bit)
 
 ## Jumpers & Capacitor Configuration.
 
