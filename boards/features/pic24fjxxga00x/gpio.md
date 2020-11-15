@@ -15,9 +15,9 @@
 #pragma config FWDTEN = OFF, ICS = PGx1, GWRP = OFF, GCP = OFF, JTAGEN = OFF
 
 #include <xc.h>
-// PIC24FJxxGA002 - Compile with XC16(v1.50).
+// PIC24FJxxGA002 - Compile with XC16(v1.60).
 // PIC24FJxxGA002 - @8MHz Internal Oscillator.
-// v0.1 - 06/2020.
+// v0.1 - 11/2020.
 
 // I/O Ports.
 
@@ -86,9 +86,9 @@ int main(void)
 #pragma config FWDTEN = OFF, ICS = PGx1, GWRP = OFF, GCP = OFF, JTAGEN = OFF
 
 #include <xc.h>
-// PIC24FJxxGA002 - Compile with XC16(v1.50).
+// PIC24FJxxGA002 - Compile with XC16(v1.60).
 // PIC24FJxxGA002 - @8MHz Internal Oscillator.
-// v0.1 - 06/2020.
+// v0.1 - 11/2020.
 
 // I/O Ports.
 

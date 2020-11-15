@@ -20,7 +20,7 @@
 #include <xc.h>
 // PIC24FJxxGA002 - Compile with XC16(v1.60).
 // PIC24FJxxGA002 - @8MHz Internal Oscillator.
-// v0.1 - 07/2020.
+// v0.1 - 11/2020.
 
 // EUSART Asynchronous.
 
@@ -159,7 +159,7 @@ void eusart_writeString(const uint8_t * u8Data)
 #include <xc.h>
 // PIC24FJxxGA004 - Compile with XC16(v1.60).
 // PIC24FJxxGA004 - @8MHz Internal Oscillator.
-// v0.1 - 07/2020.
+// v0.1 - 11/2020.
 
 // EUSART Asynchronous.
 
