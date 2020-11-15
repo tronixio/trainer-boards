@@ -1,4 +1,4 @@
-# PIC24FJxxGA/GB00x External Oscillator.
+# PIC24FJxxGA002/GA004 - External Oscillator.
 
 ## 0.Contents.
 
