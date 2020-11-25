@@ -18,7 +18,7 @@
 
 ## Board top.
 
-![NHD-0420DZ-FL-YBW Top](./pics/nhd-0420.)png
+![NHD-0420DZ-FL-YBW Top](./pics/nhd-0420.png)
 
 ---
 THIS CODE IS PROVIDED WITHOUT ANY WARRANTY OR GUARANTEES.
