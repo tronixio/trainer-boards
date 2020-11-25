@@ -14,6 +14,7 @@
 
 ## Modules Parallel.
 
+- [LCD Characters - NHD-0420DZ-FL-YBW - 4 Lines 20 Characters.](./modules/nhd-0420dz/README.md)
 - [LCD Characters - EA-DOGM081/162/163 - 1/2/3 Lines 8/16 Characters.](./modules/dogm16x/README.md)
 
 ## Modules I2C.
