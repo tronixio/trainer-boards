@@ -14,9 +14,10 @@
 
 ## Code Examples.
 
-- [PIC24FJxxGA002 - NHD-0420DZ-FL-YBW - PIC16-Bit Trainer.](./nhd-0420.md)
+- [PIC16F177x - NHD-0420DZ-FL-YBW - PIC8-Bit Trainer.](./pic16f177x.md)
+- [PIC24FJxxGA002 - NHD-0420DZ-FL-YBW - PIC16-Bit Trainer.](./pic24fj.md)
 
-## Board top.
+## Board PIC Trainer.
 
 ![NHD-0420DZ-FL-YBW Top](./pics/nhd-0420.png)
 
