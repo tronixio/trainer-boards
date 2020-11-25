@@ -21,7 +21,7 @@
 - [PIC18FXXJ13 - GPIO.](./pic18fxxj13/gpio.md)
 - [PIC18FXXJ13 - EUSART.](./pic18fxxj13/eusart.md)
 
-### DRAFT - PIC18FXXQ43.
+### TODO - PIC18FXXQ43.
 
 - [TODO - PIC18FXXQ43 - Internal Oscillator.](./pic18fxxq43/intosc.md)
 - [TODO - PIC18FXXQ43 - External Oscillator.](./pic18fxxq43/extosc.md)
