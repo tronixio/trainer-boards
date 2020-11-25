@@ -2,8 +2,8 @@
 
 ## Features.
 
-- 4 Lines 16 Characters.
-- ST7 controller.
+- 4 Lines 20 Characters.
+- ST7066U controller.
 - 4-bit, 8-bit.
 - Operating voltage : 5V (NHD-0420DZ-FL-YBW).
 - Operating voltage : 3V3 (NHD-0420DZ-FL-YBW-33V3).
