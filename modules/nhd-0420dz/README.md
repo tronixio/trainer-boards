@@ -1,9 +1,9 @@
-# NHD-0420DZ-FL-YBW - ST7066U.
+# NHD-0420DZ - ST7066U.
 
 ## Features.
 
 - 4 Lines 20 Characters.
-- ST7066U controller.
+- ST7066U controller (HD44780 Compatible).
 - 4-bit, 8-bit.
 - Operating voltage : 5V (NHD-0420DZ-FL-YBW).
 - Operating voltage : 3V3 (NHD-0420DZ-FL-YBW-33V3).
@@ -14,8 +14,8 @@
 
 ## Code Examples.
 
-- [PIC16F177x - NHD-0420DZ-FL-YBW - PIC8-Bit Trainer.](./pic16f177x.md)
-- [PIC24FJxxGA002 - NHD-0420DZ-FL-YBW - PIC16-Bit Trainer.](./pic24fj.md)
+- [TODO - PIC16F177x - NHD-0420DZ - PIC8-Bit Trainer.](./pic16f177x.md)
+- [TODO - PIC24FJxxGA002 - NHD-0420DZ - PIC16-Bit Trainer.](./pic24fj.md)
 
 ## Board PIC Trainer.
 
