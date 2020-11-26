@@ -1,4 +1,4 @@
-# TODO - NHD-0420DZ - ST7066U.
+# DRAFT - NHD-0420DZ - ST7066U.
 
 ## 0.Contents.
 
