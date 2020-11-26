@@ -88,6 +88,9 @@
 #define ST7066U_SET_DDRAM_ADDRESS_SECOND_LINE           0xC0
 #define ST7066U_SET_DDRAM_ADDRESS_THIRD_LINE            0x94
 #define ST7066U_SET_DDRAM_ADDRESS_FOURTH_LINE           0xD4
+#define ST7066U_INSTRUCTION_DELAY_US                    40
+#define ST7066U_CLEAR_DISPLAY_DELAY_MS                  2
+#define ST7066U_INITIALIZATION_DELAY_MS                 50
 // ASCII Characters.
 #define ASCII_SPACE                                     0x20
 // NHD-0420DZ Configuration.
@@ -108,11 +111,11 @@ void lcd_writeString(const uint8_t * u8Data);
 void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor);
 
 // Strings & Custom patterns.
-const uint8_t string0[] = "Tronix I/O";
-const uint8_t string1[] = "www.tronix.io";
-const uint8_t string2[] = "Custom patterns";
-const uint8_t separator[] = " - ";
-const uint8_t custom_patterns[5][8] = {
+const uint8_t au8Tronix[] = "Tronix I/O";
+const uint8_t au8WWW[] = "www.tronix.io";
+const uint8_t au8Custom[] = "Custom patterns";
+const uint8_t au8Separator[] = " - ";
+const uint8_t au8BatteryPattern[5][8] = {
     {0x0e, 0x1b, 0x11, 0x11, 0x11, 0x11, 0x11, 0x1f},
     {0x0e, 0x1b, 0x11, 0x11, 0x11, 0x1f, 0x1f, 0x1f},
     {0x0e, 0x1b, 0x11, 0x11, 0x1f, 0x1f, 0x1f, 0x1f},
@@ -149,14 +152,14 @@ int main(void)
     uint8_t pattern = 0;
     for(pattern=0; pattern<5; pattern++){
         for(line=0; line<8; line++){
-            lcd_writeData(custom_patterns[pattern][line]);
+            lcd_writeData(au8BatteryPattern[pattern][line]);
         }
     }
 
     // Display String.
-    lcd_writeStringSetCursor(string0, NHD0420DZ_CONFIGURATION_FIRST_LINE + 0x05);
-    lcd_writeStringSetCursor(string1, NHD0420DZ_CONFIGURATION_SECOND_LINE + 0x03);
-    lcd_writeStringSetCursor(string2, NHD0420DZ_CONFIGURATION_THIRD_LINE + 0x02);
+    lcd_writeStringSetCursor(au8Tronix, NHD0420DZ_CONFIGURATION_FIRST_LINE + 0x05);
+    lcd_writeStringSetCursor(au8WWW, NHD0420DZ_CONFIGURATION_SECOND_LINE + 0x03);
+    lcd_writeStringSetCursor(au8Custom, NHD0420DZ_CONFIGURATION_THIRD_LINE + 0x02);
 
     // Display Custom Patterns from ST7066U CGRAM.
     lcd_writeInstruction(NHD0420DZ_CONFIGURATION_FOURTH_LINE + 0x05);
@@ -165,7 +168,7 @@ int main(void)
     lcd_writeData(0x02);
     lcd_writeData(0x03);
     lcd_writeData(0x04);
-    lcd_writeString(separator);
+    lcd_writeString(au8Separator);
 
     while(1){
         for(pattern=0; pattern<5; pattern++){
@@ -180,7 +183,7 @@ int main(void)
 void lcd_clearDisplay(void)
 {
     lcd_writeInstruction(ST7066U_CLEAR_DISPLAY);
-    __delay_ms(2);
+    __delay_ms(ST7066U_CLEAR_DISPLAY_DELAY_MS);
 }
 
 void lcd_clearLine(uint8_t u8Line)
@@ -195,13 +198,13 @@ void lcd_clearLine(uint8_t u8Line)
 
 void lcd_initialize(void)
 {
-    __delay_ms(50);
+    __delay_ms(ST7066U_INITIALIZATION_DELAY_MS);
     lcd_writeInstruction(ST7066U_FUNCTION_SET_8_BIT_TWO_LINE_FONT5x8);
     lcd_writeInstruction(ST7066U_FUNCTION_SET_8_BIT_TWO_LINE_FONT5x8);
     lcd_writeInstruction(ST7066U_DISPLAY_ON_CURSOR_OFF);
     lcd_writeInstruction(ST7066U_ENTRY_MODE_DDRAM_INCREMENT_NOSHIFT);
     lcd_writeInstruction(ST7066U_CLEAR_DISPLAY);
-    __delay_ms(2);
+    __delay_ms(ST7066U_CLEAR_DISPLAY_DELAY_MS);
 }
 
 void lcd_writeData(uint8_t u8Data)
@@ -210,7 +213,7 @@ void lcd_writeData(uint8_t u8Data)
     ST7066U_E;
     ST7066U_DATA = u8Data;
     ST7066U_nE;
-    __delay_us(40);
+    __delay_us(ST7066U_INSTRUCTION_DELAY_US);
 }
 
 void lcd_writeInstruction(uint8_t u8Data)
@@ -219,7 +222,7 @@ void lcd_writeInstruction(uint8_t u8Data)
     ST7066U_E;
     ST7066U_DATA = u8Data;
     ST7066U_nE;
-    __delay_us(40);
+    __delay_us(ST7066U_INSTRUCTION_DELAY_US);
 }
 
 void lcd_writeString(const uint8_t * u8Data)
@@ -320,6 +323,9 @@ void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor)
 #define ST7066U_SET_DDRAM_ADDRESS_SECOND_LINE           0xC0
 #define ST7066U_SET_DDRAM_ADDRESS_THIRD_LINE            0x94
 #define ST7066U_SET_DDRAM_ADDRESS_FOURTH_LINE           0xD4
+#define ST7066U_INSTRUCTION_DELAY_US                    40
+#define ST7066U_CLEAR_DISPLAY_DELAY_MS                  2
+#define ST7066U_INITIALIZATION_DELAY_MS                 50
 // ASCII Characters.
 #define ASCII_SPACE                                     0x20
 // NHD-0420DZ Configuration.
@@ -342,11 +348,11 @@ void lcd_writeString(const uint8_t * u8Data);
 void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor);
 
 // Strings & Custom patterns.
-const uint8_t string0[] = "Tronix I/O";
-const uint8_t string1[] = "www.tronix.io";
-const uint8_t string2[] = "Custom patterns";
-const uint8_t separator[] = " - ";
-const uint8_t custom_patterns[5][8] = {
+const uint8_t au8Tronix[] = "Tronix I/O";
+const uint8_t au8WWW[] = "www.tronix.io";
+const uint8_t au8Custom[] = "Custom patterns";
+const uint8_t au8Separator[] = " - ";
+const uint8_t au8BatteryPattern[5][8] = {
     {0x0e, 0x1b, 0x11, 0x11, 0x11, 0x11, 0x11, 0x1f},
     {0x0e, 0x1b, 0x11, 0x11, 0x11, 0x1f, 0x1f, 0x1f},
     {0x0e, 0x1b, 0x11, 0x11, 0x1f, 0x1f, 0x1f, 0x1f},
@@ -383,14 +389,14 @@ int main(void)
     uint8_t pattern = 0;
     for(pattern=0; pattern<5; pattern++){
         for(line=0; line<8; line++){
-            lcd_writeData(custom_patterns[pattern][line]);
+            lcd_writeData(au8BatteryPattern[pattern][line]);
         }
     }
 
     // Display String.
-    lcd_writeStringSetCursor(string0, NHD0420DZ_CONFIGURATION_FIRST_LINE + 0x05);
-    lcd_writeStringSetCursor(string1, NHD0420DZ_CONFIGURATION_SECOND_LINE + 0x03);
-    lcd_writeStringSetCursor(string2, NHD0420DZ_CONFIGURATION_THIRD_LINE + 0x02);
+    lcd_writeStringSetCursor(au8Tronix, NHD0420DZ_CONFIGURATION_FIRST_LINE + 0x05);
+    lcd_writeStringSetCursor(au8WWW, NHD0420DZ_CONFIGURATION_SECOND_LINE + 0x03);
+    lcd_writeStringSetCursor(au8Custom, NHD0420DZ_CONFIGURATION_THIRD_LINE + 0x02);
 
     // Display Custom Patterns from ST7066U CGRAM.
     lcd_writeInstruction(NHD0420DZ_CONFIGURATION_FOURTH_LINE + 0x05);
@@ -399,7 +405,7 @@ int main(void)
     lcd_writeData(0x02);
     lcd_writeData(0x03);
     lcd_writeData(0x04);
-    lcd_writeString(separator);
+    lcd_writeString(au8Separator);
 
     while(1){
         for(pattern=0; pattern<5; pattern++){
@@ -414,7 +420,7 @@ int main(void)
 void lcd_clearDisplay(void)
 {
     lcd_writeInstruction(ST7066U_CLEAR_DISPLAY);
-    __delay_ms(2);
+    __delay_ms(ST7066U_CLEAR_DISPLAY_DELAY_MS);
 }
 
 void lcd_clearLine(uint8_t u8Line)
@@ -429,13 +435,13 @@ void lcd_clearLine(uint8_t u8Line)
 
 void lcd_initialize(void)
 {
-    __delay_ms(50);
+    __delay_ms(ST7066U_INITIALIZATION_DELAY_MS);
     lcd_writeInstructionNOBF(ST7066U_FUNCTION_SET_8_BIT_TWO_LINE_FONT5x8);
     lcd_writeInstructionNOBF(ST7066U_FUNCTION_SET_8_BIT_TWO_LINE_FONT5x8);
     lcd_writeInstruction(ST7066U_DISPLAY_ON_CURSOR_OFF);
     lcd_writeInstruction(ST7066U_ENTRY_MODE_DDRAM_INCREMENT_NOSHIFT);
     lcd_writeInstruction(ST7066U_CLEAR_DISPLAY);
-    __delay_ms(2);
+    __delay_ms(ST7066U_CLEAR_DISPLAY_DELAY_MS);
 }
 
 void lcd_readBusyFlag(void)
@@ -476,7 +482,7 @@ void lcd_writeInstructionNOBF(uint8_t u8Data)
     ST7066U_E;
     ST7066U_DATA = u8Data;
     ST7066U_nE;
-    __delay_us(40);
+    __delay_us(ST7066U_INSTRUCTION_DELAY_US);
 }
 
 void lcd_writeString(const uint8_t * u8Data)
@@ -573,6 +579,9 @@ void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor)
 #define ST7066U_SET_DDRAM_ADDRESS_SECOND_LINE           0xC0
 #define ST7066U_SET_DDRAM_ADDRESS_THIRD_LINE            0x94
 #define ST7066U_SET_DDRAM_ADDRESS_FOURTH_LINE           0xD4
+#define ST7066U_INSTRUCTION_DELAY_US                    40
+#define ST7066U_CLEAR_DISPLAY_DELAY_MS                  2
+#define ST7066U_INITIALIZATION_DELAY_MS                 50
 // ASCII Characters.
 #define ASCII_SPACE                                     0x20
 // NHD-0420DZ Configuration.
@@ -593,11 +602,11 @@ void lcd_writeString(const uint8_t * u8Data);
 void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor);
 
 // Strings & Custom patterns.
-const uint8_t string0[] = "Tronix I/O";
-const uint8_t string1[] = "www.tronix.io";
-const uint8_t string2[] = "Custom patterns";
-const uint8_t separator[] = " - ";
-const uint8_t custom_patterns[5][8] = {
+const uint8_t au8Tronix[] = "Tronix I/O";
+const uint8_t au8WWW[] = "www.tronix.io";
+const uint8_t au8Custom[] = "Custom patterns";
+const uint8_t au8Separator[] = " - ";
+const uint8_t au8BatteryPattern[5][8] = {
     {0x0e, 0x1b, 0x11, 0x11, 0x11, 0x11, 0x11, 0x1f},
     {0x0e, 0x1b, 0x11, 0x11, 0x11, 0x1f, 0x1f, 0x1f},
     {0x0e, 0x1b, 0x11, 0x11, 0x1f, 0x1f, 0x1f, 0x1f},
@@ -634,14 +643,14 @@ int main(void)
     uint8_t pattern = 0;
     for(pattern=0; pattern<5; pattern++){
         for(line=0; line<8; line++){
-            lcd_writeData(custom_patterns[pattern][line]);
+            lcd_writeData(au8BatteryPattern[pattern][line]);
         }
     }
 
     // Display String.
-    lcd_writeStringSetCursor(string0, NHD0420DZ_CONFIGURATION_FIRST_LINE + 0x05);
-    lcd_writeStringSetCursor(string1, NHD0420DZ_CONFIGURATION_SECOND_LINE + 0x03);
-    lcd_writeStringSetCursor(string2, NHD0420DZ_CONFIGURATION_THIRD_LINE + 0x02);
+    lcd_writeStringSetCursor(au8Tronix, NHD0420DZ_CONFIGURATION_FIRST_LINE + 0x05);
+    lcd_writeStringSetCursor(au8WWW, NHD0420DZ_CONFIGURATION_SECOND_LINE + 0x03);
+    lcd_writeStringSetCursor(au8Custom, NHD0420DZ_CONFIGURATION_THIRD_LINE + 0x02);
 
     // Display Custom Patterns from ST7066U CGRAM.
     lcd_writeInstruction(NHD0420DZ_CONFIGURATION_FOURTH_LINE + 0x05);
@@ -650,7 +659,7 @@ int main(void)
     lcd_writeData(0x02);
     lcd_writeData(0x03);
     lcd_writeData(0x04);
-    lcd_writeString(separator);
+    lcd_writeString(au8Separator);
 
     while(1){
         for(pattern=0; pattern<5; pattern++){
@@ -665,7 +674,7 @@ int main(void)
 void lcd_clearDisplay(void)
 {
     lcd_writeInstruction(ST7066U_CLEAR_DISPLAY);
-    __delay_ms(2);
+    __delay_ms(ST7066U_CLEAR_DISPLAY_DELAY_MS);
 }
 
 void lcd_clearLine(uint8_t u8Line)
@@ -680,14 +689,14 @@ void lcd_clearLine(uint8_t u8Line)
 
 void lcd_initialize(void)
 {
-    __delay_ms(50);
+    __delay_ms(ST7066U_INITIALIZATION_DELAY_MS);
     lcd_writeInstruction(ST7066U_FUNCTION_SET_8_BIT_ONCE);
     lcd_writeInstruction(ST7066U_FUNCTION_SET_4_BIT_TWO_LINE_FONT5x8);
     lcd_writeInstruction(ST7066U_FUNCTION_SET_4_BIT_TWO_LINE_FONT5x8);
     lcd_writeInstruction(ST7066U_DISPLAY_ON_CURSOR_OFF);
     lcd_writeInstruction(ST7066U_ENTRY_MODE_DDRAM_INCREMENT_NOSHIFT);
     lcd_writeInstruction(ST7066U_CLEAR_DISPLAY);
-    __delay_ms(2);
+    __delay_ms(ST7066U_CLEAR_DISPLAY_DELAY_MS);
 }
 
 void lcd_writeData(uint8_t u8Data)
@@ -701,7 +710,7 @@ void lcd_writeData(uint8_t u8Data)
     ST7066U_E;
     ST7066U_DATA |= (u8Data & 0x0F);
     ST7066U_nE;
-    __delay_us(40);
+    __delay_us(ST7066U_INSTRUCTION_DELAY_US);
 }
 
 void lcd_writeInstruction(uint8_t u8Data)
@@ -715,7 +724,7 @@ void lcd_writeInstruction(uint8_t u8Data)
     ST7066U_E;
     ST7066U_DATA |= (u8Data & 0x0F);
     ST7066U_nE;
-    __delay_us(40);
+    __delay_us(ST7066U_INSTRUCTION_DELAY_US);
 }
 
 void lcd_writeString(const uint8_t * u8Data)
@@ -817,6 +826,9 @@ void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor)
 #define ST7066U_SET_DDRAM_ADDRESS_SECOND_LINE           0xC0
 #define ST7066U_SET_DDRAM_ADDRESS_THIRD_LINE            0x94
 #define ST7066U_SET_DDRAM_ADDRESS_FOURTH_LINE           0xD4
+#define ST7066U_INSTRUCTION_DELAY_US                    40
+#define ST7066U_CLEAR_DISPLAY_DELAY_MS                  2
+#define ST7066U_INITIALIZATION_DELAY_MS                 50
 // ASCII Characters.
 #define ASCII_SPACE                                     0x20
 // NHD-0420DZ Configuration.
@@ -839,11 +851,11 @@ void lcd_writeString(const uint8_t * u8Data);
 void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor);
 
 // Strings & Custom patterns.
-const uint8_t string0[] = "Tronix I/O";
-const uint8_t string1[] = "www.tronix.io";
-const uint8_t string2[] = "Custom patterns";
-const uint8_t separator[] = " - ";
-const uint8_t custom_patterns[5][8] = {
+const uint8_t au8Tronix[] = "Tronix I/O";
+const uint8_t au8WWW[] = "www.tronix.io";
+const uint8_t au8Custom[] = "Custom patterns";
+const uint8_t au8Separator[] = " - ";
+const uint8_t au8BatteryPattern[5][8] = {
     {0x0e, 0x1b, 0x11, 0x11, 0x11, 0x11, 0x11, 0x1f},
     {0x0e, 0x1b, 0x11, 0x11, 0x11, 0x1f, 0x1f, 0x1f},
     {0x0e, 0x1b, 0x11, 0x11, 0x1f, 0x1f, 0x1f, 0x1f},
@@ -880,14 +892,14 @@ int main(void)
     uint8_t pattern = 0;
     for(pattern=0; pattern<5; pattern++){
         for(line=0; line<8; line++){
-            lcd_writeData(custom_patterns[pattern][line]);
+            lcd_writeData(au8BatteryPattern[pattern][line]);
         }
     }
 
     // Display String.
-    lcd_writeStringSetCursor(string0, NHD0420DZ_CONFIGURATION_FIRST_LINE + 0x05);
-    lcd_writeStringSetCursor(string1, NHD0420DZ_CONFIGURATION_SECOND_LINE + 0x03);
-    lcd_writeStringSetCursor(string2, NHD0420DZ_CONFIGURATION_THIRD_LINE + 0x02);
+    lcd_writeStringSetCursor(au8Tronix, NHD0420DZ_CONFIGURATION_FIRST_LINE + 0x05);
+    lcd_writeStringSetCursor(au8WWW, NHD0420DZ_CONFIGURATION_SECOND_LINE + 0x03);
+    lcd_writeStringSetCursor(au8Custom, NHD0420DZ_CONFIGURATION_THIRD_LINE + 0x02);
 
     // Display Custom Patterns from ST7066U CGRAM.
     lcd_writeInstruction(NHD0420DZ_CONFIGURATION_FOURTH_LINE + 0x05);
@@ -896,7 +908,7 @@ int main(void)
     lcd_writeData(0x02);
     lcd_writeData(0x03);
     lcd_writeData(0x04);
-    lcd_writeString(separator);
+    lcd_writeString(au8Separator);
 
     while(1){
         for(pattern=0; pattern<5; pattern++){
@@ -911,7 +923,7 @@ int main(void)
 void lcd_clearDisplay(void)
 {
     lcd_writeInstruction(ST7066U_CLEAR_DISPLAY);
-    __delay_ms(2);
+    __delay_ms(ST7066U_CLEAR_DISPLAY_DELAY_MS);
 }
 
 void lcd_clearLine(uint8_t u8Line)
@@ -926,14 +938,14 @@ void lcd_clearLine(uint8_t u8Line)
 
 void lcd_initialize(void)
 {
-    __delay_ms(50);
+    __delay_ms(ST7066U_INITIALIZATION_DELAY_MS);
     lcd_writeInstructionNOBF(ST7066U_FUNCTION_SET_8_BIT_ONCE);
     lcd_writeInstructionNOBF(ST7066U_FUNCTION_SET_4_BIT_TWO_LINE_FONT5x8);
     lcd_writeInstructionNOBF(ST7066U_FUNCTION_SET_4_BIT_TWO_LINE_FONT5x8);
     lcd_writeInstruction(ST7066U_DISPLAY_ON_CURSOR_OFF);
     lcd_writeInstruction(ST7066U_ENTRY_MODE_DDRAM_INCREMENT_NOSHIFT);
     lcd_writeInstruction(ST7066U_CLEAR_DISPLAY);
-    __delay_ms(2);
+    __delay_ms(ST7066U_CLEAR_DISPLAY_DELAY_MS);
 }
 
 void lcd_readBusyFlag(void)
@@ -989,7 +1001,7 @@ void lcd_writeInstructionNOBF(uint8_t u8Data)
     ST7066U_E;
     ST7066U_DATA |= (u8Data & 0x0F);
     ST7066U_nE;
-    __delay_us(40);
+    __delay_us(ST7066U_INSTRUCTION_DELAY_US);
 }
 
 void lcd_writeString(const uint8_t * u8Data)
@@ -1086,6 +1098,9 @@ void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor)
 #define ST7066U_SET_DDRAM_ADDRESS_SECOND_LINE           0xC0
 #define ST7066U_SET_DDRAM_ADDRESS_THIRD_LINE            0x94
 #define ST7066U_SET_DDRAM_ADDRESS_FOURTH_LINE           0xD4
+#define ST7066U_INSTRUCTION_DELAY_US                    40
+#define ST7066U_CLEAR_DISPLAY_DELAY_MS                  2
+#define ST7066U_INITIALIZATION_DELAY_MS                 50
 // ASCII Characters.
 #define ASCII_SPACE                                     0x20
 // NHD-0420DZ Configuration.
@@ -1106,11 +1121,11 @@ void lcd_writeString(const uint8_t * u8Data);
 void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor);
 
 // Strings & Custom patterns.
-const uint8_t string0[] = "Tronix I/O";
-const uint8_t string1[] = "www.tronix.io";
-const uint8_t string2[] = "Custom patterns";
-const uint8_t separator[] = " - ";
-const uint8_t custom_patterns[5][8] = {
+const uint8_t au8Tronix[] = "Tronix I/O";
+const uint8_t au8WWW[] = "www.tronix.io";
+const uint8_t au8Custom[] = "Custom patterns";
+const uint8_t au8Separator[] = " - ";
+const uint8_t au8BatteryPattern[5][8] = {
     {0x0e, 0x1b, 0x11, 0x11, 0x11, 0x11, 0x11, 0x1f},
     {0x0e, 0x1b, 0x11, 0x11, 0x11, 0x1f, 0x1f, 0x1f},
     {0x0e, 0x1b, 0x11, 0x11, 0x1f, 0x1f, 0x1f, 0x1f},
@@ -1147,14 +1162,14 @@ int main(void)
     uint8_t pattern = 0;
     for(pattern=0; pattern<5; pattern++){
         for(line=0; line<8; line++){
-            lcd_writeData(custom_patterns[pattern][line]);
+            lcd_writeData(au8BatteryPattern[pattern][line]);
         }
     }
 
     // Display String.
-    lcd_writeStringSetCursor(string0, NHD0420DZ_CONFIGURATION_FIRST_LINE + 0x05);
-    lcd_writeStringSetCursor(string1, NHD0420DZ_CONFIGURATION_SECOND_LINE + 0x03);
-    lcd_writeStringSetCursor(string2, NHD0420DZ_CONFIGURATION_THIRD_LINE + 0x02);
+    lcd_writeStringSetCursor(au8Tronix, NHD0420DZ_CONFIGURATION_FIRST_LINE + 0x05);
+    lcd_writeStringSetCursor(au8WWW, NHD0420DZ_CONFIGURATION_SECOND_LINE + 0x03);
+    lcd_writeStringSetCursor(au8Custom, NHD0420DZ_CONFIGURATION_THIRD_LINE + 0x02);
 
     // Display Custom Patterns from ST7066U CGRAM.
     lcd_writeInstruction(NHD0420DZ_CONFIGURATION_FOURTH_LINE + 0x05);
@@ -1163,7 +1178,7 @@ int main(void)
     lcd_writeData(0x02);
     lcd_writeData(0x03);
     lcd_writeData(0x04);
-    lcd_writeString(separator);
+    lcd_writeString(au8Separator);
 
     while(1){
         for(pattern=0; pattern<5; pattern++){
@@ -1178,7 +1193,7 @@ int main(void)
 void lcd_clearDisplay(void)
 {
     lcd_writeInstruction(ST7066U_CLEAR_DISPLAY);
-    __delay_ms(2);
+    __delay_ms(ST7066U_CLEAR_DISPLAY_DELAY_MS);
 }
 
 void lcd_clearLine(uint8_t u8Line)
@@ -1193,14 +1208,14 @@ void lcd_clearLine(uint8_t u8Line)
 
 void lcd_initialize(void)
 {
-    __delay_ms(50);
+    __delay_ms(ST7066U_INITIALIZATION_DELAY_MS);
     lcd_writeInstruction(ST7066U_FUNCTION_SET_8_BIT_ONCE);
     lcd_writeInstruction(ST7066U_FUNCTION_SET_4_BIT_TWO_LINE_FONT5x8);
     lcd_writeInstruction(ST7066U_FUNCTION_SET_4_BIT_TWO_LINE_FONT5x8);
     lcd_writeInstruction(ST7066U_DISPLAY_ON_CURSOR_OFF);
     lcd_writeInstruction(ST7066U_ENTRY_MODE_DDRAM_INCREMENT_NOSHIFT);
     lcd_writeInstruction(ST7066U_CLEAR_DISPLAY);
-    __delay_ms(2);
+    __delay_ms(ST7066U_CLEAR_DISPLAY_DELAY_MS);
 }
 
 void lcd_writeData(uint8_t u8Data)
@@ -1214,7 +1229,7 @@ void lcd_writeData(uint8_t u8Data)
     ST7066U_E;
     ST7066U_DATA |= ((u8Data<<4) & 0xF0);
     ST7066U_nE;
-    __delay_us(40);
+    __delay_us(ST7066U_INSTRUCTION_DELAY_US);
 }
 
 void lcd_writeInstruction(uint8_t u8Data)
@@ -1228,7 +1243,7 @@ void lcd_writeInstruction(uint8_t u8Data)
     ST7066U_E;
     ST7066U_DATA |= ((u8Data<<4) & 0xF0);
     ST7066U_nE;
-    __delay_us(40);
+    __delay_us(ST7066U_INSTRUCTION_DELAY_US);
 }
 
 void lcd_writeString(const uint8_t * u8Data)
@@ -1330,6 +1345,9 @@ void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor)
 #define ST7066U_SET_DDRAM_ADDRESS_SECOND_LINE           0xC0
 #define ST7066U_SET_DDRAM_ADDRESS_THIRD_LINE            0x94
 #define ST7066U_SET_DDRAM_ADDRESS_FOURTH_LINE           0xD4
+#define ST7066U_INSTRUCTION_DELAY_US                    40
+#define ST7066U_CLEAR_DISPLAY_DELAY_MS                  2
+#define ST7066U_INITIALIZATION_DELAY_MS                 50
 // ASCII Characters.
 #define ASCII_SPACE                                     0x20
 // NHD-0420DZ Configuration.
@@ -1352,11 +1370,11 @@ void lcd_writeString(const uint8_t * u8Data);
 void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor);
 
 // Strings & Custom patterns.
-const uint8_t string0[] = "Tronix I/O";
-const uint8_t string1[] = "www.tronix.io";
-const uint8_t string2[] = "Custom patterns";
-const uint8_t separator[] = " - ";
-const uint8_t custom_patterns[5][8] = {
+const uint8_t au8Tronix[] = "Tronix I/O";
+const uint8_t au8WWW[] = "www.tronix.io";
+const uint8_t au8Custom[] = "Custom patterns";
+const uint8_t au8Separator[] = " - ";
+const uint8_t au8BatteryPattern[5][8] = {
     {0x0e, 0x1b, 0x11, 0x11, 0x11, 0x11, 0x11, 0x1f},
     {0x0e, 0x1b, 0x11, 0x11, 0x11, 0x1f, 0x1f, 0x1f},
     {0x0e, 0x1b, 0x11, 0x11, 0x1f, 0x1f, 0x1f, 0x1f},
@@ -1393,14 +1411,14 @@ int main(void)
     uint8_t pattern = 0;
     for(pattern=0; pattern<5; pattern++){
         for(line=0; line<8; line++){
-            lcd_writeData(custom_patterns[pattern][line]);
+            lcd_writeData(au8BatteryPattern[pattern][line]);
         }
     }
 
     // Display String.
-    lcd_writeStringSetCursor(string0, NHD0420DZ_CONFIGURATION_FIRST_LINE + 0x05);
-    lcd_writeStringSetCursor(string1, NHD0420DZ_CONFIGURATION_SECOND_LINE + 0x03);
-    lcd_writeStringSetCursor(string2, NHD0420DZ_CONFIGURATION_THIRD_LINE + 0x02);
+    lcd_writeStringSetCursor(au8Tronix, NHD0420DZ_CONFIGURATION_FIRST_LINE + 0x05);
+    lcd_writeStringSetCursor(au8WWW, NHD0420DZ_CONFIGURATION_SECOND_LINE + 0x03);
+    lcd_writeStringSetCursor(au8Custom, NHD0420DZ_CONFIGURATION_THIRD_LINE + 0x02);
 
     // Display Custom Patterns from ST7066U CGRAM.
     lcd_writeInstruction(NHD0420DZ_CONFIGURATION_FOURTH_LINE + 0x05);
@@ -1409,7 +1427,7 @@ int main(void)
     lcd_writeData(0x02);
     lcd_writeData(0x03);
     lcd_writeData(0x04);
-    lcd_writeString(separator);
+    lcd_writeString(au8Separator);
 
     while(1){
         for(pattern=0; pattern<5; pattern++){
@@ -1424,7 +1442,7 @@ int main(void)
 void lcd_clearDisplay(void)
 {
     lcd_writeInstruction(ST7066U_CLEAR_DISPLAY);
-    __delay_ms(2);
+    __delay_ms(ST7066U_CLEAR_DISPLAY_DELAY_MS);
 }
 
 void lcd_clearLine(uint8_t u8Line)
@@ -1439,14 +1457,14 @@ void lcd_clearLine(uint8_t u8Line)
 
 void lcd_initialize(void)
 {
-    __delay_ms(50);
+    __delay_ms(ST7066U_INITIALIZATION_DELAY_MS);
     lcd_writeInstructionNOBF(ST7066U_FUNCTION_SET_8_BIT_ONCE);
     lcd_writeInstructionNOBF(ST7066U_FUNCTION_SET_4_BIT_TWO_LINE_FONT5x8);
     lcd_writeInstructionNOBF(ST7066U_FUNCTION_SET_4_BIT_TWO_LINE_FONT5x8);
     lcd_writeInstruction(ST7066U_DISPLAY_ON_CURSOR_OFF);
     lcd_writeInstruction(ST7066U_ENTRY_MODE_DDRAM_INCREMENT_NOSHIFT);
     lcd_writeInstruction(ST7066U_CLEAR_DISPLAY);
-    __delay_ms(2);
+    __delay_ms(ST7066U_CLEAR_DISPLAY_DELAY_MS);
 }
 
 void lcd_readBusyFlag(void)
@@ -1502,7 +1520,7 @@ void lcd_writeInstructionNOBF(uint8_t u8Data)
     ST7066U_E;
     ST7066U_DATA |= ((u8Data<<4) & 0xF0);
     ST7066U_nE;
-    __delay_us(40);
+    __delay_us(ST7066U_INSTRUCTION_DELAY_US);
 }
 
 void lcd_writeString(const uint8_t * u8Data)

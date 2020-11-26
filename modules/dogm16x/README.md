@@ -3,7 +3,7 @@
 ## Features.
 
 - 1/2/3 Lines 8/16 Characters.
-- ST7306 controller.
+- ST7036 controller.
 - 4-bit, 8-bit and SPI.
 - Operating voltage : 3V3 - 5V.
 - Backlight : AMBER - BLUE - RED - WHITE - YELLOW/GREEN - RGB.
