@@ -4,12 +4,10 @@
 
 - [1.PIC24FJxxGA02 - 8-Bit no Busy Flag.](#1pic24fjxxga02---8-bit-no-busy-flag)
 - [2.PIC24FJxxGA02 - 8-Bit with Busy Flag.](#2pic24fjxxga02---8-bit-with-busy-flag)
-
-- [3.PIC24FJxxGA02 - 4-Bit Low Nibble no Busy Flag.](#)
-- [4.PIC24FJxxGA02 - 4-Bit Low Nibble with Busy Flag.](#)
-
-- [5.PIC24FJxxGA02 - 4-Bit High Nibble no Busy Flag.](#)
-- [6.PIC24FJxxGA02 - 4-Bit High Nibble with Busy Flag.](#)
+- [3.PIC24FJxxGA02 - 4-Bit Low Nibble no Busy Flag.](#3pic24fjxxga02---4-bit-low-nibble-no-busy-flag)
+- [4.PIC24FJxxGA02 - 4-Bit Low Nibble with Busy Flag.](#4pic24fjxxga02---4-bit-low-nibble-with-busy-flag)
+- [5.PIC24FJxxGA02 - 4-Bit High Nibble no Busy Flag.](#5pic24fjxxga02---4-bit-high-nibble-no-busy-flag)
+- [6.PIC24FJxxGA02 - 4-Bit High Nibble with Busy Flag.](#6pic24fjxxga02---4-bit-high-nibble-with-busy-flag)
 
 ## 1.PIC24FJxxGA02 - 8-Bit no Busy Flag.
 
