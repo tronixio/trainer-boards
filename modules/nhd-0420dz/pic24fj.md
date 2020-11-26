@@ -55,37 +55,37 @@
 
 // Definitions.
 // ST7066U Commands Port & Data Port.
-#define ST7066U_DATA									LATB
-#define ST7066U_RS										do{LATAbits.LATA0 = 0b1;} while(0)
-#define ST7066U_nRS										do{LATAbits.LATA0 = 0b0;} while(0)
-#define ST7066U_E										do{LATAbits.LATA2 = 0b1;} while(0)
-#define ST7066U_nE										do{LATAbits.LATA2 = 0b0;} while(0)
+#define ST7066U_DATA                                    LATB
+#define ST7066U_RS                                      do{LATAbits.LATA0 = 0b1;} while(0)
+#define ST7066U_nRS                                     do{LATAbits.LATA0 = 0b0;} while(0)
+#define ST7066U_E                                       do{LATAbits.LATA2 = 0b1;} while(0)
+#define ST7066U_nE                                      do{LATAbits.LATA2 = 0b0;} while(0)
 // ST7066U Instructions.
 #define ST7066U_CLEAR_DISPLAY                           0x01
 #define ST7066U_RETURN_HOME                             0x02
 #define ST7066U_ENTRY_MODE_DDRAM_DECREMENT_NOSHIFT      0x04
-#define ST7066U_ENTRY_MODE_DDRAM_DECREMENT_SHIFT		0x05
-#define ST7066U_ENTRY_MODE_DDRAM_INCREMENT_NOSHIFT		0x06
-#define ST7066U_ENTRY_MODE_DDRAM_INCREMENT_SHIFT		0x07
-#define ST7066U_DISPLAY_OFF								0x08
-#define ST7066U_DISPLAY_ON_CURSOR_OFF					0x0C
-#define ST7066U_DISPLAY_ON_CURSOR_ON_NOBLINK			0x0E
-#define ST7066U_DISPLAY_ON_CURSOR_ON_BLINK				0x0F
-#define ST7066U_DISPLAY_CURSOR_SHIFT_LEFT				0x10
-#define ST7066U_DISPLAY_CURSOR_SHIFT_RIGHT				0x14
-#define ST7066U_DISPLAY_SCREEN_SHIFT_LEFT				0x18
-#define ST7066U_DISPLAY_SCREEN_SHIFT_RIGHT				0x1C
-#define ST7066U_FUNCTION_SET_4_BIT_ONE_LINE_FONT5x8		0x20
-#define ST7066U_FUNCTION_SET_4_BIT_ONE_LINE_FONT5x11	0x24
-#define ST7066U_FUNCTION_SET_4_BIT_TWO_LINE_FONT5x8		0x28
-#define ST7066U_FUNCTION_SET_8_BIT_ONE_LINE_FONT5x8		0x30
-#define ST7066U_FUNCTION_SET_8_BIT_ONE_LINE_FONT5x11	0x34
-#define ST7066U_FUNCTION_SET_8_BIT_TWO_LINE_FONT5x8		0x38
-#define ST7066U_SET_CGRAM_ADDRESS						0x40
-#define ST7066U_SET_DDRAM_ADDRESS_FIRST_LINE			0x80
-#define ST7066U_SET_DDRAM_ADDRESS_SECOND_LINE			0xC0
-#define ST7066U_SET_DDRAM_ADDRESS_THIRD_LINE			0x94
-#define ST7066U_SET_DDRAM_ADDRESS_FOURTH_LINE			0xD4
+#define ST7066U_ENTRY_MODE_DDRAM_DECREMENT_SHIFT        0x05
+#define ST7066U_ENTRY_MODE_DDRAM_INCREMENT_NOSHIFT      0x06
+#define ST7066U_ENTRY_MODE_DDRAM_INCREMENT_SHIFT        0x07
+#define ST7066U_DISPLAY_OFF                             0x08
+#define ST7066U_DISPLAY_ON_CURSOR_OFF                   0x0C
+#define ST7066U_DISPLAY_ON_CURSOR_ON_NOBLINK            0x0E
+#define ST7066U_DISPLAY_ON_CURSOR_ON_BLINK              0x0F
+#define ST7066U_DISPLAY_CURSOR_SHIFT_LEFT               0x10
+#define ST7066U_DISPLAY_CURSOR_SHIFT_RIGHT              0x14
+#define ST7066U_DISPLAY_SCREEN_SHIFT_LEFT               0x18
+#define ST7066U_DISPLAY_SCREEN_SHIFT_RIGHT              0x1C
+#define ST7066U_FUNCTION_SET_4_BIT_ONE_LINE_FONT5x8     0x20
+#define ST7066U_FUNCTION_SET_4_BIT_ONE_LINE_FONT5x11    0x24
+#define ST7066U_FUNCTION_SET_4_BIT_TWO_LINE_FONT5x8     0x28
+#define ST7066U_FUNCTION_SET_8_BIT_ONE_LINE_FONT5x8     0x30
+#define ST7066U_FUNCTION_SET_8_BIT_ONE_LINE_FONT5x11    0x34
+#define ST7066U_FUNCTION_SET_8_BIT_TWO_LINE_FONT5x8     0x38
+#define ST7066U_SET_CGRAM_ADDRESS                       0x40
+#define ST7066U_SET_DDRAM_ADDRESS_FIRST_LINE            0x80
+#define ST7066U_SET_DDRAM_ADDRESS_SECOND_LINE           0xC0
+#define ST7066U_SET_DDRAM_ADDRESS_THIRD_LINE            0x94
+#define ST7066U_SET_DDRAM_ADDRESS_FOURTH_LINE           0xD4
 // ASCII Characters.
 #define ASCII_SPACE                                     0x20
 // NHD0420DZ Configuration.
@@ -281,42 +281,42 @@ void lcd_writeStringSetCursor(const char * cData, uint8_t u8Data)
 
 // Definitions.
 // ST7066U Commands Port & Data Port.
-#define ST7066U_DATA									LATB
-#define ST7066U_RS										do{LATAbits.LATA0 = 0b1;} while(0)
-#define ST7066U_nRS										do{LATAbits.LATA0 = 0b0;} while(0)
-#define ST7066U_RW										do{LATAbits.LATA1 = 0b1;} while(0)
-#define ST7066U_nRW										do{LATAbits.LATA1 = 0b0;} while(0)
-#define ST7066U_E										do{LATAbits.LATA2 = 0b1;} while(0)
-#define ST7066U_nE										do{LATAbits.LATA2 = 0b0;} while(0)
+#define ST7066U_DATA                                    LATB
+#define ST7066U_RS                                      do{LATAbits.LATA0 = 0b1;} while(0)
+#define ST7066U_nRS                                     do{LATAbits.LATA0 = 0b0;} while(0)
+#define ST7066U_RW                                      do{LATAbits.LATA1 = 0b1;} while(0)
+#define ST7066U_nRW                                     do{LATAbits.LATA1 = 0b0;} while(0)
+#define ST7066U_E                                       do{LATAbits.LATA2 = 0b1;} while(0)
+#define ST7066U_nE                                      do{LATAbits.LATA2 = 0b0;} while(0)
 #define ST7066U_BF                                      PORTBbits.RB7
-#define ST7066U_BF_INPUT								do{TRISBbits.TRISB7 = 0b1;} while(0)
-#define ST7066U_BF_OUTPUT								do{TRISBbits.TRISB7 = 0b0;} while(0)
+#define ST7066U_BF_INPUT                                do{TRISBbits.TRISB7 = 0b1;} while(0)
+#define ST7066U_BF_OUTPUT                               do{TRISBbits.TRISB7 = 0b0;} while(0)
 // ST7066U Instructions.
 #define ST7066U_CLEAR_DISPLAY                           0x01
 #define ST7066U_RETURN_HOME                             0x02
 #define ST7066U_ENTRY_MODE_DDRAM_DECREMENT_NOSHIFT      0x04
-#define ST7066U_ENTRY_MODE_DDRAM_DECREMENT_SHIFT		0x05
-#define ST7066U_ENTRY_MODE_DDRAM_INCREMENT_NOSHIFT		0x06
-#define ST7066U_ENTRY_MODE_DDRAM_INCREMENT_SHIFT		0x07
-#define ST7066U_DISPLAY_OFF								0x08
-#define ST7066U_DISPLAY_ON_CURSOR_OFF					0x0C
-#define ST7066U_DISPLAY_ON_CURSOR_ON_NOBLINK			0x0E
-#define ST7066U_DISPLAY_ON_CURSOR_ON_BLINK				0x0F
-#define ST7066U_DISPLAY_CURSOR_SHIFT_LEFT				0x10
-#define ST7066U_DISPLAY_CURSOR_SHIFT_RIGHT				0x14
-#define ST7066U_DISPLAY_SCREEN_SHIFT_LEFT				0x18
-#define ST7066U_DISPLAY_SCREEN_SHIFT_RIGHT				0x1C
-#define ST7066U_FUNCTION_SET_4_BIT_ONE_LINE_FONT5x8		0x20
-#define ST7066U_FUNCTION_SET_4_BIT_ONE_LINE_FONT5x11	0x24
-#define ST7066U_FUNCTION_SET_4_BIT_TWO_LINE_FONT5x8		0x28
-#define ST7066U_FUNCTION_SET_8_BIT_ONE_LINE_FONT5x8		0x30
-#define ST7066U_FUNCTION_SET_8_BIT_ONE_LINE_FONT5x11	0x34
-#define ST7066U_FUNCTION_SET_8_BIT_TWO_LINE_FONT5x8		0x38
-#define ST7066U_SET_CGRAM_ADDRESS						0x40
-#define ST7066U_SET_DDRAM_ADDRESS_FIRST_LINE			0x80
-#define ST7066U_SET_DDRAM_ADDRESS_SECOND_LINE			0xC0
-#define ST7066U_SET_DDRAM_ADDRESS_THIRD_LINE			0x94
-#define ST7066U_SET_DDRAM_ADDRESS_FOURTH_LINE			0xD4
+#define ST7066U_ENTRY_MODE_DDRAM_DECREMENT_SHIFT        0x05
+#define ST7066U_ENTRY_MODE_DDRAM_INCREMENT_NOSHIFT      0x06
+#define ST7066U_ENTRY_MODE_DDRAM_INCREMENT_SHIFT        0x07
+#define ST7066U_DISPLAY_OFF                             0x08
+#define ST7066U_DISPLAY_ON_CURSOR_OFF                   0x0C
+#define ST7066U_DISPLAY_ON_CURSOR_ON_NOBLINK            0x0E
+#define ST7066U_DISPLAY_ON_CURSOR_ON_BLINK              0x0F
+#define ST7066U_DISPLAY_CURSOR_SHIFT_LEFT               0x10
+#define ST7066U_DISPLAY_CURSOR_SHIFT_RIGHT              0x14
+#define ST7066U_DISPLAY_SCREEN_SHIFT_LEFT               0x18
+#define ST7066U_DISPLAY_SCREEN_SHIFT_RIGHT              0x1C
+#define ST7066U_FUNCTION_SET_4_BIT_ONE_LINE_FONT5x8     0x20
+#define ST7066U_FUNCTION_SET_4_BIT_ONE_LINE_FONT5x11    0x24
+#define ST7066U_FUNCTION_SET_4_BIT_TWO_LINE_FONT5x8     0x28
+#define ST7066U_FUNCTION_SET_8_BIT_ONE_LINE_FONT5x8     0x30
+#define ST7066U_FUNCTION_SET_8_BIT_ONE_LINE_FONT5x11    0x34
+#define ST7066U_FUNCTION_SET_8_BIT_TWO_LINE_FONT5x8     0x38
+#define ST7066U_SET_CGRAM_ADDRESS                       0x40
+#define ST7066U_SET_DDRAM_ADDRESS_FIRST_LINE            0x80
+#define ST7066U_SET_DDRAM_ADDRESS_SECOND_LINE           0xC0
+#define ST7066U_SET_DDRAM_ADDRESS_THIRD_LINE            0x94
+#define ST7066U_SET_DDRAM_ADDRESS_FOURTH_LINE           0xD4
 // ASCII Characters.
 #define ASCII_SPACE                                     0x20
 // NHD0420DZ Configuration.
