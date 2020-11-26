@@ -771,10 +771,10 @@ void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor)
 // MODULE.08 -> NC.
 // MODULE.09 -> NC.
 // MODULE.10 -> NC.
-// MODULE.11 -> MCU.RB4.
-// MODULE.12 -> MCU.RB5.
-// MODULE.13 -> MCU.RB6.
-// MODULE.14 -> MCU.RB7.
+// MODULE.11 -> MCU.RB0.
+// MODULE.12 -> MCU.RB1.
+// MODULE.13 -> MCU.RB2.
+// MODULE.14 -> MCU.RB3.
 // MODULE.15 -> NC.
 // MODULE.16 -> GND.
 
@@ -953,11 +953,11 @@ void lcd_readBusyFlag(void)
 void lcd_writeData(uint8_t u8Data)
 {
     ST7066U_RS;
-	ST7066U_DATA &= 0xF0;
+    ST7066U_DATA &= 0xF0;
     ST7066U_E;
     ST7066U_DATA |= ((u8Data>>4) & 0x0F);
     ST7066U_nE;
-	ST7066U_DATA &= 0xF0;
+    ST7066U_DATA &= 0xF0;
     ST7066U_E;
     ST7066U_DATA |= (u8Data & 0x0F);
     ST7066U_nE;
@@ -967,11 +967,11 @@ void lcd_writeData(uint8_t u8Data)
 void lcd_writeInstruction(uint8_t u8Data)
 {
     ST7066U_nRS;
-	ST7066U_DATA &= 0xF0;
+    ST7066U_DATA &= 0xF0;
     ST7066U_E;
     ST7066U_DATA |= ((u8Data>>4) & 0x0F);
     ST7066U_nE;
-	ST7066U_DATA &= 0xF0;
+    ST7066U_DATA &= 0xF0;
     ST7066U_E;
     ST7066U_DATA |= (u8Data & 0x0F);
     ST7066U_nE;
@@ -981,11 +981,11 @@ void lcd_writeInstruction(uint8_t u8Data)
 void lcd_writeInstructionNOBF(uint8_t u8Data)
 {
     ST7066U_nRS;
-	ST7066U_DATA &= 0xF0;
+    ST7066U_DATA &= 0xF0;
     ST7066U_E;
     ST7066U_DATA |= ((u8Data>>4) & 0x0F);
     ST7066U_nE;
-	ST7066U_DATA &= 0xF0;
+    ST7066U_DATA &= 0xF0;
     ST7066U_E;
     ST7066U_DATA |= (u8Data & 0x0F);
     ST7066U_nE;
@@ -1466,11 +1466,11 @@ void lcd_readBusyFlag(void)
 void lcd_writeData(uint8_t u8Data)
 {
     ST7066U_RS;
-	ST7066U_DATA &= 0x0F;
+    ST7066U_DATA &= 0x0F;
     ST7066U_E;
     ST7066U_DATA |= (u8Data & 0xF0);
     ST7066U_nE;
-	ST7066U_DATA &= 0x0F;
+    ST7066U_DATA &= 0x0F;
     ST7066U_E;
     ST7066U_DATA |= ((u8Data<<4) & 0xF0);
     ST7066U_nE;
@@ -1480,11 +1480,11 @@ void lcd_writeData(uint8_t u8Data)
 void lcd_writeInstruction(uint8_t u8Data)
 {
     ST7066U_nRS;
-	ST7066U_DATA &= 0x0F;
+    ST7066U_DATA &= 0x0F;
     ST7066U_E;
     ST7066U_DATA |= (u8Data & 0xF0);
     ST7066U_nE;
-	ST7066U_DATA &= 0x0F;
+    ST7066U_DATA &= 0x0F;
     ST7066U_E;
     ST7066U_DATA |= ((u8Data<<4) & 0xF0);
     ST7066U_nE;
@@ -1494,11 +1494,11 @@ void lcd_writeInstruction(uint8_t u8Data)
 void lcd_writeInstructionNOBF(uint8_t u8Data)
 {
     ST7066U_nRS;
-	ST7066U_DATA &= 0x0F;
+    ST7066U_DATA &= 0x0F;
     ST7066U_E;
     ST7066U_DATA |= (u8Data & 0xF0);
     ST7066U_nE;
-	ST7066U_DATA &= 0x0F;
+    ST7066U_DATA &= 0x0F;
     ST7066U_E;
     ST7066U_DATA |= ((u8Data<<4) & 0xF0);
     ST7066U_nE;
