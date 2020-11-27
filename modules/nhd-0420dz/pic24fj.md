@@ -1,15 +1,15 @@
-# DRAFT - NHD-0420DZ - ST7066U.
+# NHD-0420DZ - ST7066U.
 
 ## 0.Contents.
 
-- [1.DRAFT-PIC4FJxxGA02 - 8-Bit no Busy Flag.](#1pic24fjxxga02---8-bit-no-busy-flag)
-- [2.DRAFT-PIC4FJxxGA02 - 8-Bit with Busy Flag.](#2pic24fjxxga02---8-bit-with-busy-flag)
-- [3.DRAFT-PIC4FJxxGA02 - 4-Bit Low Nibble no Busy Flag.](#3pic24fjxxga02---4-bit-low-nibble-no-busy-flag)
-- [4.DRAFT-PIC4FJxxGA02 - 4-Bit Low Nibble with Busy Flag.](#4pic24fjxxga02---4-bit-low-nibble-with-busy-flag)
-- [5.DRAFT-PIC4FJxxGA02 - 4-Bit High Nibble no Busy Flag.](#5pic24fjxxga02---4-bit-high-nibble-no-busy-flag)
-- [6.DRAFT-PIC4FJxxGA02 - 4-Bit High Nibble with Busy Flag.](#6pic24fjxxga02---4-bit-high-nibble-with-busy-flag)
+- [1.PIC4FJxxGA02 - 8-Bit no Busy Flag.](#1pic24fjxxga02---8-bit-no-busy-flag)
+- [2.PIC4FJxxGA02 - 8-Bit with Busy Flag.](#2pic24fjxxga02---8-bit-with-busy-flag)
+- [3.PIC4FJxxGA02 - 4-Bit Low Nibble no Busy Flag.](#3pic24fjxxga02---4-bit-low-nibble-no-busy-flag)
+- [4.PIC4FJxxGA02 - 4-Bit Low Nibble with Busy Flag.](#4pic24fjxxga02---4-bit-low-nibble-with-busy-flag)
+- [5.PIC4FJxxGA02 - 4-Bit High Nibble no Busy Flag.](#5pic24fjxxga02---4-bit-high-nibble-no-busy-flag)
+- [6.PIC4FJxxGA02 - 4-Bit High Nibble with Busy Flag.](#6pic24fjxxga02---4-bit-high-nibble-with-busy-flag)
 
-## 1.DRAFT-PIC4FJxxGA02 - 8-Bit no Busy Flag.
+## 1.PIC4FJxxGA02 - 8-Bit no Busy Flag.
 
 ```c
 // Configuration Registers.
@@ -32,10 +32,10 @@
 // PIC16-Bit Trainer.
 // SDA - Open.
 // SCL - Open.
-// VREG - GND.
-// VCAP - Close.
 // VEE - Close.
 // BCKL - Close.
+// VREG - GND.
+// VCAP - Close.
 
 // Pinout.
 // MODULE.01 -> GND.
@@ -239,7 +239,7 @@ void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor)
 }
 ```
 
-## 2.DRAFT-PIC4FJxxGA02 - 8-Bit with Busy Flag.
+## 2.PIC4FJxxGA02 - 8-Bit with Busy Flag.
 
 ```c
 // Configuration Registers.
@@ -262,10 +262,10 @@ void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor)
 // PIC16-Bit Trainer.
 // SDA - Open.
 // SCL - Open.
-// VREG - GND.
-// VCAP - Close.
 // VEE - Close.
 // BCKL - Close.
+// VREG - GND.
+// VCAP - Close.
 
 // Pinout.
 // MODULE.01 -> GND.
@@ -499,7 +499,7 @@ void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor)
 }
 ```
 
-## 3.DRAFT-PIC4FJxxGA02 - 4-Bit Low Nibble no Busy Flag.
+## 3.PIC4FJxxGA02 - 4-Bit Low Nibble no Busy Flag.
 
 ```c
 // Configuration Registers.
@@ -522,10 +522,10 @@ void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor)
 // PIC16-Bit Trainer.
 // SDA - Open.
 // SCL - Open.
-// VREG - GND.
-// VCAP - Close.
 // VEE - Close.
 // BCKL - Close.
+// VREG - GND.
+// VCAP - Close.
 
 // Pinout.
 // MODULE.01 -> GND.
@@ -764,10 +764,10 @@ void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor)
 // PIC16-Bit Trainer.
 // SDA - Open.
 // SCL - Open.
-// VREG - GND.
-// VCAP - Close.
 // VEE - Close.
 // BCKL - Close.
+// VREG - GND.
+// VCAP - Close.
 
 // Pinout.
 // MODULE.01 -> GND.
@@ -826,6 +826,7 @@ void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor)
 #define ST7066U_SET_DDRAM_ADDRESS_SECOND_LINE           0xC0
 #define ST7066U_SET_DDRAM_ADDRESS_THIRD_LINE            0x94
 #define ST7066U_SET_DDRAM_ADDRESS_FOURTH_LINE           0xD4
+#define ST7066U_BUSY_FLAG_DELAY_US                      20
 #define ST7066U_INSTRUCTION_DELAY_US                    40
 #define ST7066U_CLEAR_DISPLAY_DELAY_MS                  2
 #define ST7066U_INITIALIZATION_DELAY_MS                 50
@@ -953,7 +954,7 @@ void lcd_readBusyFlag(void)
     ST7066U_nRS;
     ST7066U_RW;
     ST7066U_BF_INPUT;
-    __delay_us(20);
+    __delay_us(ST7066U_BUSY_FLAG_DELAY_US);
     do{
         ST7066U_nE;
         ST7066U_E;
@@ -1018,7 +1019,7 @@ void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor)
 }
 ```
 
-## 5.DRAFT-PIC4FJxxGA02 - 4-Bit High Nibble no Busy Flag.
+## 5.PIC4FJxxGA02 - 4-Bit High Nibble no Busy Flag.
 
 ```c
 // Configuration Registers.
@@ -1041,10 +1042,10 @@ void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor)
 // PIC16-Bit Trainer.
 // SDA - Open.
 // SCL - Open.
-// VREG - GND.
-// VCAP - Close.
 // VEE - Close.
 // BCKL - Close.
+// VREG - GND.
+// VCAP - Close.
 
 // Pinout.
 // MODULE.01 -> GND.
@@ -1260,7 +1261,7 @@ void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor)
 }
 ```
 
-## 6.DRAFT-PIC4FJxxGA02 - 4-Bit High Nibble with Busy Flag.
+## 6.PIC4FJxxGA02 - 4-Bit High Nibble with Busy Flag.
 
 ```c
 // Configuration Registers.
@@ -1283,10 +1284,10 @@ void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor)
 // PIC16-Bit Trainer.
 // SDA - Open.
 // SCL - Open.
-// VREG - GND.
-// VCAP - Close.
 // VEE - Close.
 // BCKL - Close.
+// VREG - GND.
+// VCAP - Close.
 
 // Pinout.
 // MODULE.01 -> GND.
@@ -1345,6 +1346,7 @@ void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor)
 #define ST7066U_SET_DDRAM_ADDRESS_SECOND_LINE           0xC0
 #define ST7066U_SET_DDRAM_ADDRESS_THIRD_LINE            0x94
 #define ST7066U_SET_DDRAM_ADDRESS_FOURTH_LINE           0xD4
+#define ST7066U_BUSY_FLAG_DELAY_US                      20
 #define ST7066U_INSTRUCTION_DELAY_US                    40
 #define ST7066U_CLEAR_DISPLAY_DELAY_MS                  2
 #define ST7066U_INITIALIZATION_DELAY_MS                 50
@@ -1472,7 +1474,7 @@ void lcd_readBusyFlag(void)
     ST7066U_nRS;
     ST7066U_RW;
     ST7066U_BF_INPUT;
-    __delay_us(20);
+    __delay_us(ST7066U_BUSY_FLAG_DELAY_US);
     do{
         ST7066U_nE;
         ST7066U_E;
