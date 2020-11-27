@@ -741,7 +741,7 @@ void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor)
 }
 ```
 
-## 4.DRAFT-PIC4FJxxGA02 - 4-Bit Low Nibble with Busy Flag.
+## 4.PIC4FJxxGA02 - 4-Bit Low Nibble with Busy Flag.
 
 ```c
 // Configuration Registers.
