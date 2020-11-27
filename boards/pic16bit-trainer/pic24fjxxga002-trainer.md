@@ -41,6 +41,7 @@
 // SCL - Open.
 // VREG - GND.
 // VCAP - Close.
+// VEE - Open.
 // BCKL - Open.
 
 // Pinout.
