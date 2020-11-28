@@ -1,4 +1,4 @@
-# DRAFT - PIC16F1777/8/9 - EUSART.
+# PIC16F1777/8/9 - EUSART.
 
 ## 0.Contents.
 
@@ -27,20 +27,20 @@
 // MCU.RC7.EUSART.RTX.
 
 // PIC8-Bit Mini Trainer.
-// URX - Open.
-// UTX - Open.
-// SDA - Open.
-// SCL - Open.
+// URX - Not Use.
+// UTX - Not Use.
+// SDA - Not Use.
+// SCL - Not Use.
 // VCAP - Open.
-// BCKL - Open.
+// BCKL - Not Use.
 
 // PIC8-Bit Trainer.
-// SDA - Open.
-// SCL - Open.
-// VEE - Open.
-// BCKL - Open.
+// SDA - Not Use.
+// SCL - Not Use.
+// VEE - Not Use.
+// BCKL - Not Use.
 // VCAP - Open.
-// SPI/I2C - Open.
+// SPI/I2C - Not Use.
 
 // Definitions.
 #define BAUDRATE                           9600
@@ -202,20 +202,20 @@ void eusart_writeString(const uint8_t * u8Data)
 // MCU.RC7.EUSART.RTX.
 
 // PIC8-Bit Mini Trainer.
-// URX - Open.
-// UTX - Open.
-// SDA - Open.
-// SCL - Open.
+// URX - Not Use.
+// UTX - Not Use.
+// SDA - Not Use.
+// SCL - Not Use.
 // VCAP - Open.
-// BCKL - Open.
+// BCKL - Not Use.
 
 // PIC8-Bit Trainer.
-// SDA - Open.
-// SCL - Open.
-// VEE - Open.
-// BCKL - Open.
+// SDA - Not Use.
+// SCL - Not Use.
+// VEE - Not Use.
+// BCKL - Not Use.
 // VCAP - Open.
-// SPI/I2C - Open.
+// SPI/I2C - Not Use.
 
 // Definitions.
 // EUSART.
@@ -376,8 +376,8 @@ uint8_t atou8(uint8_t * au8Buffer)
 // MCU.RC7.EUSART.RTX.
 
 // PIC8-Bit Nano Trainer.
-// SDA - Open.
-// SCL - Open.
+// SDA - Not Use.
+// SCL - Not Use.
 
 // Definitions.
 #define BAUDRATE                           9600
