@@ -1,4 +1,4 @@
-# PIC16F1773/6/7/8/9 - SPI.
+# PIC16F1777/8/9 - SPI.
 
 ## 0.Contents.
 
@@ -16,8 +16,8 @@
 #include <xc.h>
 #include <stdint.h>
 #define _XTAL_FREQ 8000000
-// PIC16F1773/6/7/8/9 - Compile with XC8(v2.31).
-// PIC16F1773/6/7/8/9 - @8MHz Internal Oscillator.
+// PIC16F1777/8/9 - Compile with XC8(v2.31).
+// PIC16F1777/8/9 - @8MHz Internal Oscillator.
 
 // SPI Master.
 
@@ -52,7 +52,7 @@
 void main(void)
 {
     // MCU Initialization.
-    // @8MHz Internal Oscillator.
+    // Internal Oscillator.
     OSCCON = 0x70;
     // Ports Settings.
     // PORT Data Register.

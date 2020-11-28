@@ -1,12 +1,12 @@
-# PIC16F1773/6/7/8/9 - EUSART.
+# DRAFT - PIC16F1777/8/9 - EUSART.
 
 ## 0.Contents.
 
-- [1.PIC16F1773/6/8 EUSART Tx/Rx Asynchronous.](#1pic16f177368-eusart-asynchronous)
-- [2.PIC16F1773/6/8 EUSART Tx/Rx Buffer Asynchronous.](#2pic16f177368-eusart-rx-buffer-asynchronous)
+- [1.PIC16F1778 EUSART Tx/Rx Asynchronous.](#1pic16f177368-eusart-asynchronous)
+- [2.PIC16F1778 EUSART Tx/Rx Buffer Asynchronous.](#2pic16f177368-eusart-rx-buffer-asynchronous)
 - [3.PIC16F1777/9 EUSART Tx/Rx Asynchronous.](#3pic16f17779-eusart-asynchronous)
 
-## 1.PIC16F1773/6/8 EUSART Tx/Rx Asynchronous.
+## 1.PIC16F1778 EUSART Tx/Rx Asynchronous.
 
 ```c
 // Configuration Registers.
@@ -18,9 +18,8 @@
 #include <xc.h>
 #include <stdint.h>
 #define _XTAL_FREQ 8000000
-// PIC16F1777/9 - Compile with XC8(v2.31).
-// PIC16F1777/9 - @8MHz Internal Oscillator.
-// v0.1 - 07/2020.
+// PIC16F1778 - Compile with XC8(v2.31).
+// PIC16F1778 - @8MHz Internal Oscillator.
 
 // EUSART Tx/Rx Asynchronous.
 
@@ -182,7 +181,7 @@ void eusart_writeString(const uint8_t * u8Data)
 
 <p align="center"><img alt=="EUSART" src="./pics/eusart.png"></p>
 
-## 2.PIC16F1773/6/8 EUSART Tx/Rx Buffer Asynchronous.
+## 2.PIC16F1778 EUSART Tx/Rx Buffer Asynchronous.
 
 ```c
 // Configuration Registers.
@@ -194,9 +193,8 @@ void eusart_writeString(const uint8_t * u8Data)
 #include <xc.h>
 #include <stdint.h>
 #define _XTAL_FREQ 8000000
-// PIC16F1773/6/8 - Compile with XC8(v2.30).
-// PIC16F1773/6/8 - @16MHz Internal Oscillator.
-// v0.1 - 10/2020.
+// PIC16F1778 - Compile with XC8(v2.31).
+// PIC16F1778 - @16MHz Internal Oscillator.
 
 // EUSART Tx/Rx Buffer Asynchronous.
 
@@ -371,7 +369,6 @@ uint8_t atou8(uint8_t * au8Buffer)
 #define _XTAL_FREQ 8000000
 // PIC16F1777/9 - Compile with XC8(v2.31).
 // PIC16F1777/9 - @8MHz Internal Oscillator.
-// v0.1 - 07/2020.
 
 // EUSART Tx/Rx Asynchronous.
 

@@ -1,12 +1,12 @@
-# PIC16F1773/6/7/8/9 - GPIO.
+# PIC16F1777/8/9 - GPIO.
 
 ## 0.Contents.
 
-- [1.PIC16F1773/6/8 GPIO.](#1pic16f177368-gpio)
+- [1.PIC16F1778 GPIO.](#1pic16f177368-gpio)
 - [2.PIC16F1777/9 GPIO.](#2pic16f17779-gpio)
-- [3.PIC16F1773/6/8 GPIO XC8-AS.](#1pic16f177368-gpio-xc8---as)
+- [3.PIC16F1778 GPIO PIC-AS.](#1pic16f177368-gpio-pic---as)
 
-## 1.PIC16F1773/6/8 GPIO.
+## 1.PIC16F1778 GPIO.
 
 ```c
 // Configuration Registers.
@@ -17,9 +17,8 @@
 
 #include <xc.h>
 #define _XTAL_FREQ 8000000
-// PIC16F1773/6/8 - Compile with XC8(v2.31).
-// PIC16F1773/6/8 - @8MHz Internal Oscillator.
-// v0.1 - 03/2020.
+// PIC16F1778 - Compile with XC8(v2.31).
+// PIC16F1778 - @8MHz Internal Oscillator.
 
 // I/O Ports.
 
@@ -193,11 +192,9 @@ void main(void)
 
 <p align="center"><img alt=="GPIO" src="./pics/gpio-e.png"></p>
 
-## 3.PIC16F1773/6/8 GPIO XC8-AS.
+## 3.PIC16F1778 GPIO PIC-AS.
 
 ```c
-PROCESSOR 16F1778
-
 // Configuration Registers.
 CONFIG FOSC=INTOSC
 CONFIG WDTE=OFF
@@ -218,8 +215,8 @@ CONFIG LPBOR=OFF
 CONFIG LVP=ON
 
 #include <xc.inc>
-// PIC16F1773/6/8 - Compile with PIC-AS(v2.31).
-// PIC16F1773/6/8 - @8MHz Internal Oscillator.
+// PIC16F1778 - Compile with PIC-AS(v2.31).
+// PIC16F1778 - @8MHz Internal Oscillator.
 
 PSECT resetVec,class=CODE,delta=2
 resetVect:

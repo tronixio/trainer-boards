@@ -1,4 +1,4 @@
-# PIC16F1773/6/7/8/9 - Internal Oscillator.
+# PIC16F1777/8/9 - Internal Oscillator.
 
 ## 0.Contents.
 
@@ -17,9 +17,8 @@
 #pragma config STVREN = ON, BORV = LO, LPBOR = OFF, LVP = ON
 
 #include <xc.h>
-// PIC16F1773/6/7/8/9 - Compile with XC8(v2.31).
-// PIC16F1773/6/7/8/9 - @xMHz Internal Oscillator.
-// v0.1 - 03/2020.
+// PIC16F1777/8/9 - Compile with XC8(v2.31).
+// PIC16F1777/8/9 - @xMHz Internal Oscillator.
 
 // LF Low-Frequency Internal Oscillator.
 // Clock Out Enable on RA6.
@@ -82,8 +81,8 @@ void main(void)
 #pragma config STVREN = ON, BORV = LO, LPBOR = OFF, LVP = ON
 
 #include <xc.h>
-// PIC16F1773/6/7/8/9 - Compile with XC8(v2.31).
-// PIC16F1773/6/7/8/9 - @xMHz Internal Oscillator.
+// PIC16F1777/8/9 - Compile with XC8(v2.31).
+// PIC16F1777/8/9 - @xMHz Internal Oscillator.
 
 // MF Medium-Frequency Internal Oscillator.
 // Clock Out Enable on RA6.
@@ -172,8 +171,8 @@ void main(void)
 #pragma config STVREN = ON, BORV = LO, LPBOR = OFF, LVP = ON
 
 #include <xc.h>
-// PIC16F1773/6/7/8/9 - Compile with XC8(v2.31).
-// PIC16F1773/6/7/8/9 - @xMHz Internal Oscillator.
+// PIC16F1777/8/9 - Compile with XC8(v2.31).
+// PIC16F1777/8/9 - @xMHz Internal Oscillator.
 
 // HF High-Frequency Internal Oscillator.
 // Clock Out Enable on RA6.
@@ -290,8 +289,8 @@ void main(void)
 #pragma config STVREN = ON, BORV = LO, LPBOR = OFF, LVP = ON
 
 #include <xc.h>
-// PIC16F1773/6/7/8/9 - Compile with XC8(v2.31).
-// PIC16F1773/6/7/8/9 - @xMHz Internal Oscillator.
+// PIC16F1777/8/9 - Compile with XC8(v2.31).
+// PIC16F1777/8/9 - @xMHz Internal Oscillator.
 
 // HFPLL High-Frequency Internal Oscillator with PLL.
 // Clock Out Enable on RA6.
