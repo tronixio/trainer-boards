@@ -15,7 +15,7 @@
 
 #include <xc.h>
 // PIC16F1777/8/9 - Compile with XC8(v2.31).
-// PIC16F1777/8/9 - @24.576MHz External Oscillator.
+// PIC16F1777/8/9 - @xMHz External Oscillator.
 
 // ECH External Oscillator.
 // Clock Out Enable on RA6.
@@ -23,8 +23,8 @@
 // MCU.RA6 -> SCOPE.PROBE.A.
 
 // PIC8-Bit Nano Trainer with MEMS DSC1001CI2-024.5760.
-// SDA - Open.
-// SCL - Open.
+// SDA - Not Use.
+// SCL - Not Use.
 
 // Main.
 void main(void)

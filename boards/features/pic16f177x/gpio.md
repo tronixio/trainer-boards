@@ -23,20 +23,20 @@
 // I/O Ports.
 
 // PIC8-Bit Mini Trainer.
-// URX - Open.
-// UTX - Open.
-// SDA - Open.
-// SCL - Open.
+// URX - Not Use.
+// UTX - Not Use.
+// SDA - Not Use.
+// SCL - Not Use.
 // VCAP - Open.
-// BCKL - Open.
+// BCKL - Not Use.
 
 // PIC8-Bit Trainer.
-// SDA - Open.
-// SCL - Open.
-// VEE - Open.
-// BCKL - Open.
+// SDA - Not Use.
+// SCL - Not Use.
+// VEE - Not Use.
+// BCKL - Not Use.
 // VCAP - Open.
-// SPI/I2C - Open.
+// SPI/I2C - Not Use.
 
 // Main.
 void main(void)
@@ -111,8 +111,8 @@ void main(void)
 // I/O Ports.
 
 // PIC8-Bit Nano Trainer.
-// SDA - Open.
-// SCL - Open.
+// SDA - Not Use.
+// SCL - Not Use.
 
 // Main.
 void main(void)
@@ -321,7 +321,7 @@ loop:
 
 - Port A/B/C.
 
-<p align="center"><img alt=="GPIO" src="./pics/xc8-as-gpio.png"></p>
+<p align="center"><img alt=="GPIO" src="./pics/pic-as-gpio.png"></p>
 
 
 ---
