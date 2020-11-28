@@ -7,12 +7,12 @@
 - [PIC16F - PIC-AS General Purpose Register (GPR) Bank.](./pic16f/gpr.md)
 - [PIC16F - PIC-AS Common RAM Memories.](./pic16f/ram.md)
 
-### PIC16F1773/6/7/8/9.
+### PIC16F1777/8/9.
 
-- [PIC16F1773/6/7/8/9 - Internal Oscillator.](./pic16f177x/intosc.md)
-- [PIC16F1773/6/7/8/9 - External Oscillator.](./pic16f177x/extosc.md)
-- [PIC16F1773/6/7/8/9 - GPIO.](./pic16f177x/gpio.md)
-- [PIC16F1773/6/7/8/9 - EUSART.](./pic16f177x/eusart.md)
+- [PIC16F1777/8/9 - Internal Oscillator.](./pic16f177x/intosc.md)
+- [PIC16F1777/8/9 - External Oscillator.](./pic16f177x/extosc.md)
+- [PIC16F1777/8/9 - GPIO.](./pic16f177x/gpio.md)
+- [PIC16F1777/8/9 - EUSART.](./pic16f177x/eusart.md)
 
 ### PIC18FXXJ13.
 
