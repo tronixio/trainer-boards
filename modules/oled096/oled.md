@@ -17,7 +17,7 @@
 #include <xc.h>
 #include <stdint.h>
 #define _XTAL_FREQ 8000000
-// PIC16F1773/6/8 - Compile with XC8(v2.30).
+// PIC16F1773/6/8 - Compile with XC8(v2.31).
 // PIC16F1773/6/8 - @8MHz Internal Oscillator.
 
 // Module I2C - LCD Graphical - OLED0.96 128x64 - SSD1306.

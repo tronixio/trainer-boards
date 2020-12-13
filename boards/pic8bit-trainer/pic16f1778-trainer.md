@@ -18,8 +18,8 @@
 #include <xc.h>
 #include <stdint.h>
 #define _XTAL_FREQ 8000000
-// PIC16F1773/6/8 - Compile with XC8(v2.30).
-// PIC16F1773/6/8 - @8MHz Internal Oscillator.
+// PIC16F1778 - Compile with XC8(v2.31).
+// PIC16F1778 - @8MHz Internal Oscillator.
 // v0.1 - 05/2020.
 
 // PIC8-Bit Trainer.
@@ -155,8 +155,8 @@ void main(void)
 #include <xc.h>
 #include <stdint.h>
 #define _XTAL_FREQ 8000000
-// PIC16F1773/6/8 - Compile with XC8(v2.30).
-// PIC16F1773/6/8 - @8MHz Internal Oscillator.
+// PIC16F1778 - Compile with XC8(v2.31).
+// PIC16F1778 - @8MHz Internal Oscillator.
 // v0.1 - 09/2020.
 
 // Rotary encoder code from:

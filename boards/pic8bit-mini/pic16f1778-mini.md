@@ -17,8 +17,8 @@
 #include <xc.h>
 #include <stdint.h>
 #define _XTAL_FREQ 8000000
-// PIC16F1773/6/8 - Compile with XC8(v2.30).
-// PIC16F1773/6/8 - @8MHz Internal Oscillator.
+// PIC16F1778 - Compile with XC8(v2.31).
+// PIC16F1778 - @8MHz Internal Oscillator.
 // v0.1 - 07/2020.
 
 // Rotary encoder code from:
@@ -361,8 +361,8 @@ void u16toa(uint16_t u16Data, uint8_t * au8Buffer, uint8_t u8Base)
 #include <xc.h>
 #include <stdint.h>
 #define _XTAL_FREQ 8000000
-// PIC16F1773/6/8 - Compile with XC8(v2.30).
-// PIC16F1773/6/8 - @8MHz Internal Oscillator.
+// PIC16F1778 - Compile with XC8(v2.31).
+// PIC16F1778 - @8MHz Internal Oscillator.
 // v0.1 - 07/2020.
 
 // Rotary encoder code from:

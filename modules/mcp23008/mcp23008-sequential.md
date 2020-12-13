@@ -20,7 +20,7 @@
 #include <xc.h>
 #include <stdint.h>
 #define _XTAL_FREQ 8000000
-// PIC16F1778 - Compile with XC8(v2.30).
+// PIC16F1778 - Compile with XC8(v2.31).
 // PIC16F1778 - @8MHz Internal Oscillator.
 // v.0.1 - 05/2020.
 
@@ -371,7 +371,7 @@ void mcp23008_writeRegister(uint8_t u8Address, uint8_t u8Register,  uint8_t u8Da
 #include <xc.h>
 #include <stdint.h>
 #define _XTAL_FREQ 8000000
-// PIC16F1778 - Compile with XC8(v2.30).
+// PIC16F1778 - Compile with XC8(v2.31).
 // PIC16F1778 - @8MHz Internal Oscillator.
 // v.0.1 - 05/2020.
 
@@ -637,7 +637,7 @@ void mcp23008_writeRegister(uint8_t u8Address, uint8_t u8Register,  uint8_t u8Da
 #include <xc.h>
 #include <stdint.h>
 #define _XTAL_FREQ 8000000
-// PIC16F1778 - Compile with XC8(v2.30).
+// PIC16F1778 - Compile with XC8(v2.31).
 // PIC16F1778 - @8MHz Internal Oscillator.
 // v.0.1 - 05/2020.
 
@@ -919,7 +919,7 @@ void mcp23008_writeRegister(uint8_t u8Address, uint8_t u8Register,  uint8_t u8Da
 #include <xc.h>
 #include <stdint.h>
 #define _XTAL_FREQ 8000000
-// PIC16F1778 - Compile with XC8(v2.30).
+// PIC16F1778 - Compile with XC8(v2.31).
 // PIC16F1778 - @8MHz Internal Oscillator.
 // v.0.1 - 05/2020.
 
@@ -1199,7 +1199,7 @@ void mcp23008_writeRegister(uint8_t u8Address, uint8_t u8Register,  uint8_t u8Da
 #include <xc.h>
 #include <stdint.h>
 #define _XTAL_FREQ 8000000
-// PIC16F1778 - Compile with XC8(v2.30).
+// PIC16F1778 - Compile with XC8(v2.31).
 // PIC16F1778 - @8MHz Internal Oscillator.
 // v.0.1 - 05/2020.
 

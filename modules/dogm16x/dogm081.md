@@ -21,7 +21,7 @@
 #include <xc.h>
 #include <stdint.h>
 #define _XTAL_FREQ 8000000
-// PIC16F1773/6/8 - Compile with XC8(v2.30).
+// PIC16F1773/6/8 - Compile with XC8(v2.31).
 // PIC16F1773/6/8 - @8MHz Internal Oscillator.
 
 // Module - LCD Character - EA-DOGM081 - ST7036.
@@ -323,7 +323,7 @@ void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor)
 #include <xc.h>
 #include <stdint.h>
 #define _XTAL_FREQ 8000000
-// PIC16F1773/6/8 - Compile with XC8(v2.30).
+// PIC16F1773/6/8 - Compile with XC8(v2.31).
 // PIC16F1773/6/8 - @8MHz Internal Oscillator.
 
 // Module - LCD Character - EA-DOGM081 - ST7036.
@@ -612,7 +612,7 @@ void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor)
 #include <xc.h>
 #include <stdint.h>
 #define _XTAL_FREQ 8000000
-// PIC16F1773/6/8 - Compile with XC8(v2.30).
+// PIC16F1773/6/8 - Compile with XC8(v2.31).
 // PIC16F1773/6/8 - @8MHz Internal Oscillator.
 
 // Module - LCD Character - EA-DOGM081 - ST7036.
@@ -952,7 +952,7 @@ void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor)
 #include <xc.h>
 #include <stdint.h>
 #define _XTAL_FREQ 8000000
-// PIC16F1773/6/8 - Compile with XC8(v2.30).
+// PIC16F1773/6/8 - Compile with XC8(v2.31).
 // PIC16F1773/6/8 - @8MHz Internal Oscillator.
 
 // Module - LCD Character - EA-DOGM081 - ST7036.
@@ -1254,7 +1254,7 @@ void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor)
 #include <xc.h>
 #include <stdint.h>
 #define _XTAL_FREQ 8000000
-// PIC16F1773/6/8 - Compile with XC8(v2.30).
+// PIC16F1773/6/8 - Compile with XC8(v2.31).
 // PIC16F1773/6/8 - @8MHz Internal Oscillator.
 
 // Module - LCD Character - EA-DOGM081 - ST7036.
@@ -1543,7 +1543,7 @@ void lcd_writeStringSetCursor(const uint8_t * u8Data, uint8_t u8Cursor)
 #include <xc.h>
 #include <stdint.h>
 #define _XTAL_FREQ 8000000
-// PIC16F1773/6/8 - Compile with XC8(v2.30).
+// PIC16F1773/6/8 - Compile with XC8(v2.31).
 // PIC16F1773/6/8 - @8MHz Internal Oscillator.
 
 // Module - LCD Character - EA-DOGM081 - ST7036.

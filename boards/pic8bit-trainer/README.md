@@ -16,7 +16,7 @@
 ## Code Examples.
 
 - [PIC8-Bit Features.](https://github.com/tronixio/trainer-boards/tree/main/boards/features#pic-8-bit)
-- [PIC16F1773/6/8 - ADC - BARGRAPH - ROTARY ENCODER.](./pic16f1778-trainer.md)
+- [PIC16F1778 - ADC - BARGRAPH - ROTARY ENCODER.](./pic16f1778-trainer.md)
 
 ## Jumpers Configuration.
 
