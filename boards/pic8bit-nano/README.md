@@ -4,7 +4,7 @@
 
 - 44 Pins PIC8-Bit Family (PIC16F/PIC18F).
 - Powered with micro USB, regulated at 3V3.
-- Internal oscillator and/or external MEMS oscillator.
+- Oscillator internal or external MEMS.
 - Headers for breadboard and probes.
 - I2C with jumpers.
 - UART MCP2221A.

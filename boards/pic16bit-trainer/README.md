@@ -4,7 +4,7 @@
 
 - 28 Pins PIC16-Bit Family (dsPIC33/PIC24).
 - Powered with external DC or AC, variable regulated.
-- Internal oscillator and/or external oscillator.
+- Oscillator internal or external.
 - Headers for breadboard and probes.
 - I2C with jumpers.
 - PCB 160x100mm.
