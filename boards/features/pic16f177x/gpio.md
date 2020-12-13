@@ -180,7 +180,6 @@ void main(void)
 //        LATD = ~LATD;
 //        LATE = ~LATE;
     }
-    return(0);
 }
 ```
 
