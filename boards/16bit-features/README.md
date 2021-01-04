@@ -1,6 +1,6 @@
-# MCU Features.
+# PIC 16-Bit MCU Features.
 
-## PIC 16-Bit.
+## PIC24FJxxGA00x.
 
 - [PIC24FJxxGA00x - Internal Oscillator.](./pic24fjxxga00x/intosc.md)
 - [PIC24FJxxGA00x - External Oscillator.](./pic24fjxxga00x/extosc.md)

@@ -17,6 +17,7 @@
 ## Code Examples.
 
 - [PIC8-Bit Features.](https://github.com/tronixio/trainer-boards/tree/main/boards/8bit-features)
+- [PIC16F1777/9 - EUSART.](./pic16f177x-nano.md)
 
 ## Capacitor Configuration.
 
