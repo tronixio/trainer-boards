@@ -9,8 +9,8 @@
 
 ## MCU Features.
 
-- [PIC 8-Bit Features.](./boards/features#pic-8-bit)
-- [PIC 16-Bit Features.](./boards/features#pic-16-bit)
+- [PIC 8-Bit Features.](./boards/8bit-features)
+- [PIC 16-Bit Features.](./boards/16bit-features)
 
 ## Modules Parallel.
 

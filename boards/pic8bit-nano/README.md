@@ -16,7 +16,7 @@
 
 ## Code Examples.
 
-- [PIC8-Bit Features.](https://github.com/tronixio/trainer-boards/tree/main/boards/features#pic-8-bit)
+- [PIC8-Bit Features.](https://github.com/tronixio/trainer-boards/tree/main/boards/8bit-features)
 
 ## Capacitor Configuration.
 

@@ -28,13 +28,6 @@
 - [TODO - PIC18FXXQ43 - GPIO.](./pic18fxxq43/gpio.md)
 - [TODO - PIC18FXXQ43 - EUSART.](./pic18fxxq43/eusart.md)
 
-## PIC 16-Bit.
-
-- [PIC24FJxxGA00x - Internal Oscillator.](./pic24fjxxga00x/intosc.md)
-- [PIC24FJxxGA00x - External Oscillator.](./pic24fjxxga00x/extosc.md)
-- [PIC24FJxxGA00x - GPIO.](./pic24fjxxga00x/gpio.md)
-- [DRAFT - PIC24FJxxGA00x - EUSART.](./pic24fjxxga00x/eusart.md)
-
 ## Notes.
 
 - TODO : Work in progress, prototype was not good, hardware, PCB and code can be rework.
