@@ -19,7 +19,7 @@
 ## Code Examples.
 
 - [PIC8-Bit Features.](https://github.com/tronixio/trainer-boards/tree/main/boards/8bit-features)
-- [PIC16F1778 - ADC - EUSART - LCD - ROTARY ENCODER - SWITCHS.](./pic16f1778-mini.md)
+- [PIC16F1778 - ADC - EUSART - LCD - ROTARY ENCODER - SWITCHS.](./pic16f1778.md)
 
 ## Jumper Configuration.
 
