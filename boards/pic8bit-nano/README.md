@@ -21,7 +21,7 @@
 
 ## Capacitor Configuration.
 
-|PIC         |VCAP           |
+|PIC         |VCAP (C5)      |
 |------------|---------------|
 |PIC16F1777/9|Do Not Populate|
 |PIC18F4xJ13 |Populate       |
