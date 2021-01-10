@@ -17,6 +17,7 @@
 ## Code Examples.
 
 - [PIC16-Bit Features.](https://github.com/tronixio/trainer-boards/tree/main/boards/16bit-features)
+- [PIC24FJxxGA004 - EUSART RX/TX Asynchronous.](./pic24fjxxga004.md)
 
 ## Jumpers & Capacitor Configuration.
 
