@@ -20,9 +20,9 @@
 
 ## Jumpers & Capacitor Configuration.
 
-|PIC           |JP1 - VREG +3V3|JP2 - VREG GND|VCAP    |
-|--------------|:-------------:|:------------:|:------:|
-|PIC24FJ64GA004|Open           |Close         |Populate|
+|PIC           |JP1 - VREG +3V3|JP2 - VREG GND|VCAP (C6)|
+|--------------|:-------------:|:------------:|:-------:|
+|PIC24FJ64GA004|Open           |Close         |Populate |
 
 ## Board top.
 
