@@ -1,8 +1,8 @@
-# DRAFT - CAT4238.
+# CAT4238 LED Driver.
 
 ## Features.
 
-- Step-up DC/DC Converter 10 LED.
+- 10 LED Step-up DC/DC Converter.
 - [Datasheet CAT4238.](https://www.onsemi.com/pub/Collateral/CAT4238-D.PDF)
 
 ## Schematic.
@@ -11,7 +11,7 @@
 
 ## Code Examples.
 
-- [TODO - PIC16F1773/6/8 - PIC8-Bit Trainer.](./cat4238.md)
+- [PIC16F1778 - PIC8-Bit Trainer.](./cat4238.md)
 
 ## Board top.
 

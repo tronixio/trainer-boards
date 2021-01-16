@@ -1,8 +1,8 @@
-# AP5724/5/6.
+# AP5724/5/6 LED Driver.
 
 ## Features.
 
-- Step-up DC/DC Converter 2~6 LED.
+- 2~6 LED Step-up DC/DC Converter.
 - [Datasheet AP5724.](https://www.diodes.com/assets/Datasheets/AP5724.pdf)
 - [Datasheet AP5725.](https://www.diodes.com/assets/Datasheets/AP5725.pdf)
 - [Datasheet AP5726.](https://www.diodes.com/assets/Datasheets/AP5726.pdf)
