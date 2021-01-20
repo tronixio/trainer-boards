@@ -3,7 +3,6 @@
 ## Features.
 
 - 2 LED Constant Current.
-- [Datasheet CAT4002.](https://www.onsemi.com/pub/Collateral/cat4002.PDF)
 
 ## Schematic.
 
