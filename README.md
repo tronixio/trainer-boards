@@ -33,8 +33,9 @@
 
 ## Modules GPIO.
 
+- [DRAFT - CAT4002A - 2 LED Constant Current.](./modules/cat4002/README.md)
 - [AP5724/5/6 - 2~6 LED Step-up DC/DC Converter.](./modules/ap572x/README.md)
-- [CAT4238 -  10 LED Step-up DC/DC Converter.](./modules/cat4238/README.md)
+- [CAT4238 - 10 LED Step-up DC/DC Converter.](./modules/cat4238/README.md)
 
 ## Modules UART.
 
