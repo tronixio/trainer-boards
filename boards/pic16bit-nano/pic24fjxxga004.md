@@ -1,4 +1,4 @@
-# DRAFT - PIC16-Bit Nano Trainer.
+# PIC16-Bit Nano Trainer.
 
 ## 0.Contents.
 
