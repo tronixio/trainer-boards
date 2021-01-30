@@ -3,6 +3,7 @@
 ## Features.
 
 - 2 LED Constant Current.
+- [Datasheet CAT4002.](https://www.onsemi.com/pub/Collateral/CAT4002A-D.PDF)
 
 ## Schematic.
 
@@ -10,7 +11,7 @@
 
 ## Code Examples.
 
-- [PIC16F1778 - PIC8-Bit Trainer.](./cat4002.md)
+- [TODO - PIC16F1778 - PIC8-Bit Trainer.](./cat4002.md)
 
 ## Board top.
 
