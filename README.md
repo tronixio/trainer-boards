@@ -1,7 +1,7 @@
 # Trainer Boards.
 
-- [PIC8-Bit Nano Trainer.](./boards/pic8bit-nano/README.md)
-- [PIC16-Bit Nano Trainer.](./boards/pic16bit-nano/README.md)
+- [PIC8-Bit Nano Trainer.](./boards/pic8bit-nano/)
+- [PIC16-Bit Nano Trainer.](./boards/pic16bit-nano/)
 
 ## MCU Features.
 
