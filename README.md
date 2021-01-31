@@ -12,6 +12,8 @@
 
 ## Modules I2C.
 
+- [LCD Graphic - OLED0.96 - 128x64.](./modules/oled096/)
+
 ## Modules SPI.
 
 ## Modules GPIO.
