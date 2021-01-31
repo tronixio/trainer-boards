@@ -1,6 +1,10 @@
 # Trainer Boards.
 
+- [PIC8-Bit Trainer.](./boards/pic8bit-trainer/)
+- [PIC8-Bit Mini Trainer.](./boards/pic8bit-mini/)
 - [PIC8-Bit Nano Trainer.](./boards/pic8bit-nano/)
+- [PIC16-Bit Trainer.](./boards/pic16bit-trainer/)
+- [PIC16-Bit Mini Trainer.](./boards/pic16bit-mini/)
 - [PIC16-Bit Nano Trainer.](./boards/pic16bit-nano/)
 
 ## MCU Features.
