@@ -16,7 +16,7 @@
 
 ## Code Examples.
 
-- [PIC8-Bit MCU Features.](https://github.com/tronixio/trainer-boards/tree/main/features/8bit)
+- [PIC8-Bit Features.](https://github.com/tronixio/trainer-boards/tree/main/boards/8bit-features)
 - [PIC16F1777/9 - EUSART RX/TX Asynchronous.](./pic16f177x.md)
 
 ## Capacitor Configuration.

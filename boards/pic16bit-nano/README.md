@@ -16,7 +16,7 @@
 
 ## Code Examples.
 
-- [PIC16-Bit MCU Features.](https://github.com/tronixio/trainer-boards/tree/main/features/16bit)
+- [PIC16-Bit Features.](https://github.com/tronixio/trainer-boards/tree/main/boards/16bit-features)
 - [PIC24FJxxGA004 - UART RX/TX Asynchronous.](./pic24fjxxga004.md)
 
 ## Jumpers & Capacitor Configuration.
