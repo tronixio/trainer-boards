@@ -5,8 +5,8 @@
 
 ## MCU Features.
 
-- [PIC 8-Bit MCU Features.](./features/8bit)
-- [PIC 16-Bit MCU Features.](./features/16bit)
+- [PIC 8-Bit MCU Features.](./features/8bit/)
+- [PIC 16-Bit MCU Features.](./features/16bit/)
 
 ## Modules Parallel.
 
@@ -16,8 +16,8 @@
 
 ## Modules GPIO.
 
-- [AP5724/5/6 - 2~6 LED Step-up DC/DC Converter.](./modules/ap572x/README.md)
-- [CAT4238 - 10 LED Step-up DC/DC Converter.](./modules/cat4238/README.md)
+- [AP5724/5/6 - 2~6 LED Step-up DC/DC Converter.](./modules/ap572x/)
+- [CAT4238 - 10 LED Step-up DC/DC Converter.](./modules/cat4238/)
 
 ## Modules UART.
 
