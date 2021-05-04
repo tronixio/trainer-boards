@@ -12,12 +12,12 @@
 
 ## Schematic.
 
-- [PIC16-Bit Nano Trainer.](./pic16bit-nano.pdf)
+- [PIC16-Bit Nano Trainer.](./assets/pic16bit-nano.pdf)
 
 ## Code Examples.
 
 - [PIC16-Bit Features.](https://github.com/tronixio/trainer-boards/tree/main/features/16bit/)
-- [PIC24FJxxGA004 - UART RX/TX Asynchronous.](./pic24fjxxga004.md)
+- [PIC24FJxxGA004 - UART RX/TX Asynchronous.](https://github.com/tronixio/trainer-boards/blob/main/features/16bit/pic24fjxxga00x/eusart.md)
 
 ## Jumpers & Capacitor Configuration.
 
