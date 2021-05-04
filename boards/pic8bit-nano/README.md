@@ -12,12 +12,12 @@
 
 ## Schematic.
 
-- [PIC8-Bit Nano Trainer.](./pic8bit-nano.pdf)
+- [PIC8-Bit Nano Trainer.](./assets/pic8bit-nano.pdf)
 
 ## Code Examples.
 
 - [PIC8-Bit Features.](https://github.com/tronixio/trainer-boards/tree/main/features/8bit/)
-- [PIC16F1777/9 - EUSART RX/TX Asynchronous.](./pic16f177x.md)
+- [PIC16F1777/9 - EUSART RX/TX Asynchronous.](https://github.com/tronixio/trainer-boards/blob/main/features/8bit/pic16f177x/eusart.md)
 
 ## Capacitor Configuration.
 

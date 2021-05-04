@@ -10,8 +10,7 @@
 - [PIC16F1777/8/9 - Internal Oscillator.](./pic16f177x/intosc.md)
 - [PIC16F1777/8/9 - External Oscillator.](./pic16f177x/extosc.md)
 - [PIC16F1777/8/9 - GPIO.](./pic16f177x/gpio.md)
-- [PIC16F1778 - EUSART Rx/Tx Asynchronous.](../pic8bit-mini/pic16f1778.md)
-- [PIC16F1777/9 - EUSART Rx/Tx Asynchronous.](../pic8bit-nano/pic16f177x.md)
+- [PIC16F1777/8/9 - EUSART](./pic16f177x/eusart.md)
 
 ## PIC18FXXJ13.
 
