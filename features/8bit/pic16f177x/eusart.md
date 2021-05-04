@@ -1,11 +1,15 @@
-# PIC8-Bit Nano Trainer.
+# PIC16F1777/8/9 - EUSART.
 
 ## 0.Contents.
 
-- [1.PIC16F1777/9 - EUSART Rx/Tx Asynchronous - Internal Oscillator.](#1pic16f17779---eusart-rxtx-asynchronous---internal-oscillator)
-- [2.PIC16F1777/9 - EUSART Rx/Tx Asynchronous - External MEMS.](#2pic16f17779---eusart-rxtx-asynchronous---external-mems)
+- [1.TODO - PIC16F1778 - EUSART Rx/Tx Asynchronous - Internal Oscillator.](#1pic16f17779---eusart-rxtx-asynchronous---internal-oscillator)
 
-## 1.PIC16F1777/9 - EUSART Rx/Tx Asynchronous - Internal Oscillator.
+- [2.PIC16F1777/9 - EUSART Rx/Tx Asynchronous - Internal Oscillator.](#1pic16f17779---eusart-rxtx-asynchronous---internal-oscillator)
+- [3.PIC16F1777/9 - EUSART Rx/Tx Asynchronous - External MEMS.](#2pic16f17779---eusart-rxtx-asynchronous---external-mems)
+
+## 1.TODO - PIC16F1778 - EUSART Rx/Tx Asynchronous - Internal Oscillator.
+
+## 2.PIC16F1777/9 - EUSART Rx/Tx Asynchronous - Internal Oscillator.
 
 ```c
 // Configuration Registers.
@@ -169,7 +173,7 @@ void eusart_writeString(const uint8_t * u8Data)
 
 <p align="center"><img alt=="EUSART" src="./pics/eusart9600.png"></p>
 
-## 2.PIC16F1777/9 - EUSART Rx/Tx Asynchronous - External MEMS.
+## 3.PIC16F1777/9 - EUSART Rx/Tx Asynchronous - External MEMS.
 
 ```c
 // Configuration Registers.
