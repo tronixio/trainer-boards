@@ -11,11 +11,11 @@
 
 ## Schematic.
 
-- [PIC16-Bit Trainer.](./pic16bit-trainer.pdf)
+- [PIC16-Bit Trainer.](./assets/pic16bit-trainer.pdf)
 
 ## Code Examples.
 
-- [PIC16-Bit Features.](https://github.com/tronixio/trainer-boards/tree/main/boards/16bit-features)
+- [PIC16-Bit Features.](https://github.com/tronixio/trainer-boards/tree/main/features/16bit)
 - [DRAFT - PIC24FJ64GA002 - ADC - BARGRAPH - ROTARY ENCODER.](./pic24fjxxga002-trainer.md)
 
 ## Jumpers Configuration.

@@ -24,6 +24,7 @@
 |------------|-----|
 |PIC16F1778  |Open |
 |PIC18F2xJ13 |Close|
+|PIC18F4xQ43 |Open |
 
 ## Board top.
 
