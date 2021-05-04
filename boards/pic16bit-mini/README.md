@@ -14,7 +14,7 @@
 
 ## Schematic.
 
-- [PIC16-Bit Mini Trainer.](./pic16bit-mini.pdf)
+- [PIC16-Bit Mini Trainer.](./assets/pic16bit-mini.pdf)
 
 ## Code Examples.
 
