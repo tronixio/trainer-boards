@@ -5,7 +5,7 @@
 - [PIC24FJxxGA00x - Internal Oscillator.](./pic24fjxxga00x/intosc.md)
 - [PIC24FJxxGA00x - External Oscillator.](./pic24fjxxga00x/extosc.md)
 - [PIC24FJxxGA00x - GPIO.](./pic24fjxxga00x/gpio.md)
-- [DRAFT - PIC24FJxxGA00x - EUSART.](./pic24fjxxga00x/eusart.md)
+- [PIC24FJxxGA00x - EUSART.](./pic24fjxxga00x/eusart.md)
 
 ## Notes.
 

@@ -14,7 +14,7 @@
 
 ## Schematic.
 
-- [PIC8-Bit Mini Trainer.](./pic8bit-mini.pdf)
+- [PIC8-Bit Mini Trainer.](./assets/pic8bit-mini.pdf)
 
 ## Code Examples.
 
