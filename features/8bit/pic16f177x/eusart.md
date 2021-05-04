@@ -2,10 +2,10 @@
 
 ## 0.Contents.
 
-- [1.TODO - PIC16F1778 - EUSART Rx/Tx Asynchronous - Internal Oscillator.](#1pic16f17779---eusart-rxtx-asynchronous---internal-oscillator)
+- [1.TODO - PIC16F1778 - EUSART Rx/Tx Asynchronous - Internal Oscillator.](#1pic16f17778---eusart-rxtx-asynchronous---internal-oscillator)
 
-- [2.PIC16F1777/9 - EUSART Rx/Tx Asynchronous - Internal Oscillator.](#1pic16f17779---eusart-rxtx-asynchronous---internal-oscillator)
-- [3.PIC16F1777/9 - EUSART Rx/Tx Asynchronous - External MEMS.](#2pic16f17779---eusart-rxtx-asynchronous---external-mems)
+- [2.PIC16F1777/9 - EUSART Rx/Tx Asynchronous - Internal Oscillator.](#2pic16f17779---eusart-rxtx-asynchronous---internal-oscillator)
+- [3.PIC16F1777/9 - EUSART Rx/Tx Asynchronous - External MEMS.](#3pic16f17779---eusart-rxtx-asynchronous---external-mems)
 
 ## 1.TODO - PIC16F1778 - EUSART Rx/Tx Asynchronous - Internal Oscillator.
 
