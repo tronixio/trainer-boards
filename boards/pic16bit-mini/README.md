@@ -18,7 +18,7 @@
 
 ## Code Examples.
 
-- [PIC16-Bit Features.](https://github.com/tronixio/trainer-boards/tree/main/boards/16bit-features)
+- [PIC16-Bit Features.](https://github.com/tronixio/trainer-boards/tree/main/features/16bit)
 - [PIC24FJ64GA002 - ADC - EUSART - LCD - ROTARY ENCODER - SWITCHS.](./pic24fjxxga002-mini.md)
 
 ## Jumpers Configuration.
