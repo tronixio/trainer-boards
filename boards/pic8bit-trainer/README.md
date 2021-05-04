@@ -11,19 +11,19 @@
 
 ## Schematic.
 
-- [PIC8-Bit Trainer.](./pic8bit-trainer.pdf)
+- [PIC8-Bit Trainer.](./assets/pic8bit-trainer.pdf)
 
 ## Code Examples.
 
-- [PIC8-Bit Features.](https://github.com/tronixio/trainer-boards/tree/main/boards/8bit-features)
+- [PIC8-Bit Features.](https://github.com/tronixio/trainer-boards/tree/main/features/8bit/)
 - [PIC16F1778 - ADC - BARGRAPH - ROTARY ENCODER.](./pic16f1778-trainer.md)
 
 ## Jumpers Configuration.
 
-|PIC           |VCAP |
-|--------------|-----|
-|PIC16F1773/6/8|Open |
-|PIC18F2xJ13   |Close|
+|PIC         |VCAP |
+|------------|-----|
+|PIC16F1778  |Open |
+|PIC18F2xJ13 |Close|
 
 ## Board top.
 

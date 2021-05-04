@@ -2,7 +2,7 @@
 
 ## 0.Contents.
 
-- [1.BARGRAPH - ADC.](#bargraph---adc)
+- [1.BARGRAPH - ADC.](#1bargraph---adc)
 - [2.BARGRAPH - ROTARY ENCODER.](#2bargraph---rotary-encoder)
 - [3.TODO - SWITCHES.](#3swithes)
 
