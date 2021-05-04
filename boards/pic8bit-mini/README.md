@@ -23,11 +23,11 @@
 
 ## Jumper Configuration.
 
-|PIC           |VCAP |
-|--------------|-----|
-|PIC16F1773/6/8|Open |
-|PIC18F2xJ13   |Close|
-|PIC18F4xQ43   |Open |
+|PIC         |VCAP |
+|------------|-----|
+|PIC16F1778  |Open |
+|PIC18F2xJ13 |Close|
+|PIC18F4xQ43 |Open |
 
 ## Board top.
 
